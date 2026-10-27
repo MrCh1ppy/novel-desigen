@@ -1536,14 +1536,68 @@
                 "name": "旅属T-65坦克营",
                 "quantity": 1,
                 "ref": "armour-bn-44"
+              }
+            ]
+          }
+        },
+        {
+          "title": "旅直属支援与保障",
+          "root": {
+            "name": "改编后的机械化旅",
+            "children": [
+              {
+                "name": "机械化工兵连",
+                "quantity": 1
               },
               {
-                "name": "后备营",
+                "name": "通信连",
+                "quantity": 1
+              },
+              {
+                "name": "防空连",
+                "quantity": 1
+              },
+              {
+                "name": "155毫米炮兵连",
                 "quantity": 1,
-                "detail": "冷战定额未定"
+                "detail": "6门"
+              }
+            ]
+          }
+        },
+        {
+          "title": "旅直属后备与运输",
+          "root": {
+            "name": "改编后的机械化旅",
+            "children": [
+              {
+                "name": "旅直属后备营",
+                "quantity": 1,
+                "detail": "乘坐ZS-47；数量未定"
               },
               {
-                "name": "其余直属及保障未定",
+                "name": "旅属运输营",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "3吨卡车运输连",
+                    "quantity": 2,
+                    "detail": "每连6辆"
+                  },
+                  {
+                    "name": "1.5吨卡车运输连",
+                    "quantity": 1,
+                    "detail": "6辆"
+                  },
+                  {
+                    "name": "汽修连",
+                    "quantity": 1,
+                    "detail": "T-65底盘牵引车，数量未定"
+                  }
+                ]
+              },
+              {
+                "name": "其他直属机构细编未定",
                 "relation": "unknown"
               }
             ]
@@ -1552,7 +1606,8 @@
       ],
       "notes": [
         "具体各旅完成年份未定，不等于1965年全军同时配齐。",
-        "营内44辆APC／FSV为有机车辆，任务配属坦克不再与全旅44辆坦克营重复累计。"
+        "营内44辆APC／FSV为有机车辆，任务配属坦克不再与全旅44辆坦克营重复累计。",
+        "坦克营加入后汽修连更新使用T-65底盘牵引车；后备营车辆数、炮兵牵引方式、防空武器及其余细编未定。"
       ],
       "totals": [
         {
@@ -1731,6 +1786,131 @@
         }
       ],
       "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "cw-motor-bde",
+      "section": "coldwar",
+      "period": "1960年代后期全摩托化后；逐旅改编进度未定",
+      "title": "冷战摩托化旅",
+      "sources": [
+        {
+          "label": "16号 · topic-06",
+          "path": "16-冷战陆军步兵编制演变.md#topic-06"
+        },
+        {
+          "label": "19号 · topic-02",
+          "path": "19-1970年代陆军野战体系与战区火力.md#topic-02"
+        }
+      ],
+      "views": [
+        {
+          "title": "摩步与旅属FSV及支援",
+          "root": {
+            "name": "冷战摩托化旅",
+            "children": [
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "detail": "细编未定"
+              },
+              {
+                "name": "摩托化步兵营",
+                "quantity": 3,
+                "ref": "cw-motor-bn-late1960s"
+              },
+              {
+                "name": "旅属HZ-47 FSV营",
+                "quantity": 1,
+                "ref": "armour-bn-44"
+              }
+            ]
+          }
+        },
+        {
+          "title": "旅直属支援与保障",
+          "root": {
+            "name": "冷战摩托化旅",
+            "children": [
+              {
+                "name": "摩托化工兵连",
+                "quantity": 1
+              },
+              {
+                "name": "通信连",
+                "quantity": 1
+              },
+              {
+                "name": "防空连",
+                "quantity": 1
+              },
+              {
+                "name": "155毫米炮兵连",
+                "quantity": 1,
+                "detail": "6门"
+              }
+            ]
+          }
+        },
+        {
+          "title": "旅直属后备与运输",
+          "root": {
+            "name": "冷战摩托化旅",
+            "children": [
+              {
+                "name": "旅直属后备营",
+                "quantity": 1,
+                "detail": "乘坐卡车；来源未定"
+              },
+              {
+                "name": "旅属运输营",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "3吨卡车运输连",
+                    "quantity": 2,
+                    "detail": "每连6辆"
+                  },
+                  {
+                    "name": "1.5吨卡车运输连",
+                    "quantity": 1,
+                    "detail": "6辆"
+                  },
+                  {
+                    "name": "汽修连",
+                    "quantity": 1,
+                    "detail": "ZS-47改装牵引车，数量未定；主要回收FSV"
+                  }
+                ]
+              },
+              {
+                "name": "其他直属机构细编未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "FSV集中于旅属营，可按任务加强摩步营；不作为摩步营有机FSV连。",
+        "运输营18辆卡车为已列运输连车辆；后备营车辆来源及牵引车数量未定，不重复计算。",
+        "1976年起适用增设反坦克导弹排的摩步营模板；逐旅改编进度未定。"
+      ],
+      "totals": [
+        {
+          "label": "运输营运输连卡车",
+          "terms": [
+            6,
+            6,
+            6
+          ],
+          "value": 18,
+          "unit": "辆"
+        }
+      ],
+      "related": [
+        "cw-motor-bn-1976"
+      ],
       "basis": "已确认编制；缺项另标"
     },
     {
