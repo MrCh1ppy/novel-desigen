@@ -1,0 +1,3998 @@
+{
+  "schema_version": 1,
+  "sections": [
+    {
+      "id": "ww2",
+      "title": "1938—1946年：基础旅、混成旅及专业营",
+      "note": "以1938年旅制为基础，1942年连级无线电与旅属坦克连、1944年部分坦克扩营分别登记。"
+    },
+    {
+      "id": "armour",
+      "title": "统一装甲营连定额",
+      "note": "此处集中维护14车连、44车营，具体采用阶段由引用它的旅／营模板限定。"
+    },
+    {
+      "id": "coldwar",
+      "title": "1950—1970年代：徒步、机步与卡车摩步",
+      "note": "普通营无有机FSV连；混成旅集中FSV营，机械化排另有本排有机FSV。1965年前后机械化旅是否设坦克营分别画树。"
+    },
+    {
+      "id": "postcoldwar",
+      "title": "1990年代：专业装甲骑兵",
+      "note": "保留当时有效的团级专业组织，2014年撤编不追溯抹去其历史阶段。"
+    },
+    {
+      "id": "modern",
+      "title": "2014—2020年后：现代旅营、合成编组与专业营",
+      "note": "基本班排、永久旅营与临时BTG／CTG分别维护；13式从2020年开始列装，未确认总数不补齐。"
+    },
+    {
+      "id": "special",
+      "title": "空降、特战与两个轻步兵旅的分期编制",
+      "note": "第56旅和第118、第234旅各自按沿革阶段登记，三个旅所属九个作战营不再平行直属司令部。"
+    },
+    {
+      "id": "missions",
+      "title": "战役附录：1998年与2015年任务编组",
+      "note": "这里只登记已确认的任务关系，保留未定旅级衔接，不把战役抽组提升为全国永久编制。"
+    }
+  ],
+  "templates": [
+    {
+      "id": "command-1938",
+      "section": "ww2",
+      "period": "1938年以后",
+      "title": "旅营建制与纵队任务指挥",
+      "sources": [
+        {
+          "label": "03号 · topic-02",
+          "path": "03-陆军军制.md#topic-02"
+        }
+      ],
+      "views": [
+        {
+          "title": "战区直接指挥纵队的方向",
+          "root": {
+            "name": "战区",
+            "children": [
+              {
+                "name": "常设纵队机关",
+                "children": [
+                  {
+                    "name": "常设旅",
+                    "children": [
+                      {
+                        "name": "一线步兵营",
+                        "quantity": 3
+                      },
+                      {
+                        "name": "旅属后备营",
+                        "quantity": 1
+                      }
+                    ],
+                    "relation": "task"
+                  }
+                ],
+                "relation": "task"
+              },
+              {
+                "name": "专业兵种与战役保障",
+                "relation": "support"
+              }
+            ]
+          }
+        },
+        {
+          "title": "需要OG统筹的大型方向",
+          "root": {
+            "name": "战区",
+            "children": [
+              {
+                "name": "临时OG",
+                "children": [
+                  {
+                    "name": "常设纵队机关",
+                    "children": [
+                      {
+                        "name": "常设旅",
+                        "children": [
+                          {
+                            "name": "旅内有机营"
+                          }
+                        ],
+                        "relation": "task"
+                      }
+                    ],
+                    "relation": "task"
+                  }
+                ],
+                "relation": "task"
+              },
+              {
+                "name": "专业兵种与战役保障",
+                "relation": "support"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "纵队与OG不是永久辖旅的建制上级；树中任务指挥边不表示固定隶属。OG按方向需要设置，可省略。",
+        "三个一线营与后备营是普通旅的基础；特战和轻步兵旅按各自专题，不套用完整普通旅定额。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "ww2-bde-1938",
+      "section": "ww2",
+      "period": "1938年基础；1942年以后另有改进",
+      "title": "标准徒步步兵旅",
+      "sources": [
+        {
+          "label": "10号 · topic-01",
+          "path": "10-二战陆军与空军编制.md#topic-01"
+        },
+        {
+          "label": "04号 · topic-02",
+          "path": "04-二战陆军战术与保障.md#topic-02"
+        }
+      ],
+      "views": [
+        {
+          "title": "主战、后备及工兵",
+          "root": {
+            "name": "标准徒步步兵旅",
+            "children": [
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "ref": "ww2-hq-1938"
+              },
+              {
+                "name": "一线步兵营",
+                "quantity": 3,
+                "ref": "ww2-bn-1938"
+              },
+              {
+                "name": "后备营",
+                "quantity": 1,
+                "ref": "ww2-reserve-1938"
+              },
+              {
+                "name": "工兵连",
+                "quantity": 1,
+                "detail": "班排及装备未定"
+              },
+              {
+                "name": "旅属运输营",
+                "quantity": 1,
+                "ref": "ww2-transport-1938"
+              }
+            ]
+          }
+        },
+        {
+          "title": "旅直属火力",
+          "root": {
+            "name": "同一旅的直属火力",
+            "children": [
+              {
+                "name": "重机枪连",
+                "quantity": 1,
+                "detail": "15毫米机枪12挺"
+              },
+              {
+                "name": "反坦克连",
+                "quantity": 1,
+                "detail": "30毫米炮6门"
+              },
+              {
+                "name": "重迫击炮连",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "迫击炮排",
+                    "quantity": 3,
+                    "children": [
+                      {
+                        "name": "炮班",
+                        "quantity": 2,
+                        "detail": "各1门120毫米"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "两张图是同一旅的不同部分，不是两个旅或额外的直属火力指挥部。",
+        "一线营不再有永久15毫米机枪、30毫米炮或后备连；可获旅按任务加强。",
+        "标准旅没有有机坦克；1938年不默认已配齐1940年才服役的37式机枪。",
+        "后备营惯常配用的3辆1.5T车出自旅运输营，不能重复加车；额外第3个1.5T运输连未定，不列编。"
+      ],
+      "totals": [
+        {
+          "label": "全旅已明确机动车",
+          "terms": [
+            18,
+            12,
+            6,
+            3
+          ],
+          "value": 39,
+          "unit": "辆"
+        },
+        {
+          "label": "名义标称载重",
+          "terms": [
+            45,
+            18,
+            1.5
+          ],
+          "value": 64.5,
+          "unit": "吨"
+        }
+      ],
+      "related": [
+        "ww2-mixed-1942",
+        "ww2-mixed-1944"
+      ],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "ww2-hq-1938",
+      "section": "ww2",
+      "period": "1938年基础旅",
+      "title": "旅部指挥、通信与医疗",
+      "sources": [
+        {
+          "label": "10号 · topic-01",
+          "path": "10-二战陆军与空军编制.md#topic-01"
+        }
+      ],
+      "views": [
+        {
+          "title": "旅部已知组织",
+          "root": {
+            "name": "旅部",
+            "children": [
+              {
+                "name": "指挥连",
+                "quantity": 1
+              },
+              {
+                "name": "直属通信排",
+                "quantity": 1,
+                "detail": "人装未定"
+              },
+              {
+                "name": "直属医疗排",
+                "quantity": 1,
+                "ref": "ww2-medical-1938"
+              },
+              {
+                "name": "协调支援排",
+                "detail": "有条件加强",
+                "relation": "attached"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "指挥连承载旅长、参谋长和参谋机关；协调支援排不是永久有机单位。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "ww2-bn-1938",
+      "section": "ww2",
+      "period": "1938年后营骨架；连排下钻为1942年基准",
+      "title": "一线步兵营",
+      "sources": [
+        {
+          "label": "10号 · topic-01",
+          "path": "10-二战陆军与空军编制.md#topic-01"
+        }
+      ],
+      "views": [
+        {
+          "title": "营有机单位",
+          "root": {
+            "name": "一线步兵营",
+            "children": [
+              {
+                "name": "营部",
+                "quantity": 1,
+                "detail": "另配0.5T车1辆"
+              },
+              {
+                "name": "步兵连",
+                "quantity": 3,
+                "ref": "ww2-co-1942"
+              },
+              {
+                "name": "重武器连",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "迫击炮排",
+                    "quantity": 3,
+                    "children": [
+                      {
+                        "name": "炮班",
+                        "quantity": 2,
+                        "detail": "各1门82毫米"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "运输连",
+                "quantity": 1,
+                "detail": "1.5T卡车6辆"
+              }
+            ]
+          }
+        },
+        {
+          "title": "可受领的旅级加强",
+          "root": {
+            "name": "同一营的任务加强",
+            "children": [
+              {
+                "name": "医疗班",
+                "quantity": 1,
+                "detail": "9人，来自旅医疗排",
+                "relation": "attached"
+              },
+              {
+                "name": "40式分队",
+                "detail": "可无，具体数量按任务",
+                "relation": "attached"
+              },
+              {
+                "name": "15毫米机枪支援群",
+                "detail": "常见4—6挺，非必配",
+                "relation": "attached"
+              },
+              {
+                "name": "30毫米炮分队",
+                "relation": "attached"
+              },
+              {
+                "name": "工兵分队",
+                "relation": "attached"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "下钻步兵连中的145人、11人班和37式两挺机枪是1942年人装口径，不能自动反推1938年换装已完成。",
+        "营部及保障总员额未核算，不能沿用旧独立营800人总额。",
+        "运输连6辆分配：三个步兵连各1、营部1、重武器连2；营部0.5T车另计。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "ww2-co-1942",
+      "section": "ww2",
+      "period": "1942年班排岗位基准",
+      "title": "步兵连、排与11人班",
+      "sources": [
+        {
+          "label": "10号 · topic-01",
+          "path": "10-二战陆军与空军编制.md#topic-01"
+        }
+      ],
+      "views": [
+        {
+          "title": "连至班",
+          "root": {
+            "name": "步兵连",
+            "children": [
+              {
+                "name": "连部",
+                "quantity": 1,
+                "detail": "12人"
+              },
+              {
+                "name": "步兵排",
+                "quantity": 3,
+                "children": [
+                  {
+                    "name": "排部",
+                    "quantity": 1,
+                    "detail": "3人"
+                  },
+                  {
+                    "name": "步兵班",
+                    "quantity": 3,
+                    "children": [
+                      {
+                        "name": "班长",
+                        "quantity": 1
+                      },
+                      {
+                        "name": "组长",
+                        "quantity": 2
+                      },
+                      {
+                        "name": "自动步枪手",
+                        "quantity": 2
+                      },
+                      {
+                        "name": "栓动步枪手",
+                        "quantity": 6
+                      }
+                    ],
+                    "detail": "每班11人"
+                  }
+                ]
+              },
+              {
+                "name": "连武器排",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "37式机枪组",
+                    "quantity": 2,
+                    "detail": "每组6人、1挺"
+                  },
+                  {
+                    "name": "排部等岗位人数未定",
+                    "relation": "unknown"
+                  }
+                ],
+                "detail": "约25人"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "每排36人；连基本人员120人，另计约25人武器排，约145人只是连级岗位口径，不用于补平营总额。",
+        "1937—1940年连级曾用约3挺十四式临时顶替；1940年37式服役，1941年完成连级替换。"
+      ],
+      "totals": [
+        {
+          "label": "每排人员",
+          "terms": [
+            3,
+            11,
+            11,
+            11
+          ],
+          "value": 36,
+          "unit": "人"
+        },
+        {
+          "label": "连基本人员",
+          "terms": [
+            12,
+            36,
+            36,
+            36
+          ],
+          "value": 120,
+          "unit": "人"
+        },
+        {
+          "label": "连含武器排约数",
+          "terms": [
+            120,
+            25
+          ],
+          "value": 145,
+          "unit": "人（约）"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "ww2-reserve-1938",
+      "section": "ww2",
+      "period": "1938年基础旅",
+      "title": "旅属后备营",
+      "sources": [
+        {
+          "label": "10号 · topic-01",
+          "path": "10-二战陆军与空军编制.md#topic-01"
+        }
+      ],
+      "views": [
+        {
+          "title": "后备人员层级",
+          "root": {
+            "name": "后备营",
+            "quantity": 1,
+            "children": [
+              {
+                "name": "后备连",
+                "quantity": 3,
+                "children": [
+                  {
+                    "name": "后备排",
+                    "quantity": 3,
+                    "children": [
+                      {
+                        "name": "后备班",
+                        "quantity": 3,
+                        "detail": "每班9人"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "营连排部人数未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "243为班内人员，不是全营总人数；无武器排、武器连和有机重武器。",
+        "先补充轮换三个一线营，再承担旅纵深警戒；不能作为第四个同等火力突击营。",
+        "此模板的人数不移植到冷战或现代后备营。"
+      ],
+      "totals": [
+        {
+          "label": "班内人员",
+          "terms": [
+            81,
+            81,
+            81
+          ],
+          "value": 243,
+          "unit": "人"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "ww2-transport-1938",
+      "section": "ww2",
+      "period": "1938年基础旅",
+      "title": "旅运输营与六资产连",
+      "sources": [
+        {
+          "label": "10号 · topic-01",
+          "path": "10-二战陆军与空军编制.md#topic-01"
+        },
+        {
+          "label": "04号 · topic-02",
+          "path": "04-二战陆军战术与保障.md#topic-02"
+        }
+      ],
+      "views": [
+        {
+          "title": "运输营",
+          "root": {
+            "name": "旅运输营",
+            "quantity": 1,
+            "children": [
+              {
+                "name": "1.5T运输连",
+                "quantity": 2,
+                "children": [
+                  {
+                    "name": "运输排",
+                    "quantity": 3,
+                    "children": [
+                      {
+                        "name": "汽车班",
+                        "quantity": 2,
+                        "detail": "各1辆1.5T"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "3T运输连",
+                "quantity": 1,
+                "detail": "6辆3T"
+              },
+              {
+                "name": "汽修连",
+                "quantity": 1,
+                "detail": "车辆及员额未定"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "每运输连3排×2班×1车＝6辆；汽修连不按六车制推填。",
+        "汽修连负责旅、营运输连专业维修；各运输连仍负责日常保养。",
+        "其中一个1.5T连通常保障后备营，可按前线需求抽回。"
+      ],
+      "totals": [
+        {
+          "label": "运输营已明确载货车辆",
+          "terms": [
+            12,
+            6
+          ],
+          "value": 18,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "ww2-medical-1938",
+      "section": "ww2",
+      "period": "1938年基础旅",
+      "title": "旅医疗排与下放医疗班",
+      "sources": [
+        {
+          "label": "10号 · topic-01",
+          "path": "10-二战陆军与空军编制.md#topic-01"
+        },
+        {
+          "label": "04号 · topic-02",
+          "path": "04-二战陆军战术与保障.md#topic-02"
+        }
+      ],
+      "views": [
+        {
+          "title": "医疗排的四班与排部",
+          "root": {
+            "name": "旅直属医疗排",
+            "quantity": 1,
+            "children": [
+              {
+                "name": "排部",
+                "quantity": 1,
+                "detail": "驻旅统计；人数另计"
+              },
+              {
+                "name": "下放一线营的医疗班",
+                "quantity": 3,
+                "detail": "每班9人，临时配属"
+              },
+              {
+                "name": "留旅医疗班",
+                "quantity": 1,
+                "detail": "9人，保障未下放单位"
+              }
+            ]
+          }
+        },
+        {
+          "title": "每个下放医疗班",
+          "root": {
+            "name": "医疗班",
+            "quantity": 1,
+            "children": [
+              {
+                "name": "步兵连医疗小组",
+                "quantity": 3,
+                "detail": "每组2人"
+              },
+              {
+                "name": "营部医疗人员",
+                "detail": "3人，协调后送与标记"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "三班下放各一线营，但仍为旅医疗排有机；留旅班不是第四个一线营医疗班。",
+        "专业分队随受援营已有医疗班保障；未配属营者由留旅班保障，不另增医疗班。",
+        "旅排负责初始救治和前沿后送，协调军接收后继续后送；不画成旅属野战医院。"
+      ],
+      "totals": [
+        {
+          "label": "四班人员",
+          "terms": [
+            9,
+            9,
+            9,
+            9
+          ],
+          "value": 36,
+          "unit": "人（排部另计）"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "ww2-mixed-1942",
+      "section": "ww2",
+      "period": "1942年起，部分旅",
+      "title": "坦克连阶段的混成旅",
+      "sources": [
+        {
+          "label": "10号 · topic-01",
+          "path": "10-二战陆军与空军编制.md#topic-01"
+        },
+        {
+          "label": "44号 · topic-03",
+          "path": "44-早期陆军武器与车辆.md#topic-03"
+        }
+      ],
+      "views": [
+        {
+          "title": "相对基础旅的装甲新增",
+          "root": {
+            "name": "1942年混成旅",
+            "children": [
+              {
+                "name": "一线步兵营",
+                "quantity": 3,
+                "ref": "ww2-bn-1938"
+              },
+              {
+                "name": "后备营",
+                "quantity": 1,
+                "ref": "ww2-reserve-1938"
+              },
+              {
+                "name": "40式坦克连",
+                "quantity": 1,
+                "ref": "armour-co-14"
+              },
+              {
+                "name": "旅部及原旅直属单位",
+                "ref": "ww2-bde-1938"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "坦克连为旅有机，营受领坦克仍属临时加强；未改编旅保持普通步兵旅。",
+        "14辆为后续统一坦克连组织定额，不据此确认1942年每个新编连实到14辆。",
+        "连级无线电在1942年继续普及，不能将40式型号改叫42式。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "ww2-mixed-1944",
+      "section": "ww2",
+      "period": "1944年起部分扩营；1944末—1946年逐步普及",
+      "title": "坦克营阶段的混成旅",
+      "sources": [
+        {
+          "label": "10号 · topic-01",
+          "path": "10-二战陆军与空军编制.md#topic-01"
+        },
+        {
+          "label": "44号 · topic-03",
+          "path": "44-早期陆军武器与车辆.md#topic-03"
+        }
+      ],
+      "views": [
+        {
+          "title": "装甲连扩为营",
+          "root": {
+            "name": "1944年后混成旅",
+            "children": [
+              {
+                "name": "一线步兵营",
+                "quantity": 3,
+                "ref": "ww2-bn-1938"
+              },
+              {
+                "name": "后备营",
+                "quantity": 1,
+                "ref": "ww2-reserve-1938"
+              },
+              {
+                "name": "旅属40式坦克营",
+                "quantity": 1,
+                "ref": "armour-bn-44"
+              },
+              {
+                "name": "旅部及其余直属单位",
+                "ref": "ww2-bde-1938"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "坦克营替换此前旅属坦克连，不在44辆外再加一个14辆连。",
+        "统一营额44辆与具体各旅在1944—1946年的实到、改编进度分别记录。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "ww2-cavalry-46",
+      "section": "ww2",
+      "period": "早期40式装甲骑兵组织；改编衔接未定",
+      "title": "46辆混型装甲骑兵大队",
+      "sources": [
+        {
+          "label": "44号 · topic-03",
+          "path": "44-早期陆军武器与车辆.md#topic-03"
+        }
+      ],
+      "views": [
+        {
+          "title": "原装甲骑兵大队",
+          "root": {
+            "name": "装甲骑兵大队",
+            "children": [
+              {
+                "name": "40式中队",
+                "quantity": 3,
+                "children": [
+                  {
+                    "name": "四车小队",
+                    "quantity": 3,
+                    "detail": "各4辆40式"
+                  },
+                  {
+                    "name": "中队部40式",
+                    "quantity": 2
+                  }
+                ]
+              },
+              {
+                "name": "后备40式",
+                "quantity": 2
+              },
+              {
+                "name": "30式改装指挥车",
+                "quantity": 2
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "保留有效的早期组织记录；它不是旅属44车坦克营，也不是在44车营外再加2辆指挥车的通用规则。"
+      ],
+      "totals": [
+        {
+          "label": "履带车辆",
+          "terms": [
+            42,
+            2,
+            2
+          ],
+          "value": 46,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "早期专业组织；非旅属坦克营模板"
+    },
+    {
+      "id": "ww2-rocket-bn",
+      "section": "ww2",
+      "period": "1944年起优先战区列装",
+      "title": "43式250毫米自行火箭炮营",
+      "sources": [
+        {
+          "label": "10号 · topic-03",
+          "path": "10-二战陆军与空军编制.md#topic-03"
+        },
+        {
+          "label": "44号 · topic-06",
+          "path": "44-早期陆军武器与车辆.md#topic-06"
+        }
+      ],
+      "views": [
+        {
+          "title": "营、连、火炮排与运输排",
+          "root": {
+            "name": "43式火箭炮营",
+            "children": [
+              {
+                "name": "营部",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "通信排",
+                    "quantity": 1,
+                    "detail": "车数及人员未定"
+                  }
+                ]
+              },
+              {
+                "name": "火箭炮连",
+                "quantity": 4,
+                "children": [
+                  {
+                    "name": "连部FDC车",
+                    "quantity": 1,
+                    "detail": "1.5T"
+                  },
+                  {
+                    "name": "火炮排",
+                    "quantity": 2,
+                    "children": [
+                      {
+                        "name": "12管发射车",
+                        "quantity": 2
+                      }
+                    ]
+                  },
+                  {
+                    "name": "运输排",
+                    "quantity": 2,
+                    "children": [
+                      {
+                        "name": "整架自装卸运输车",
+                        "quantity": 4,
+                        "detail": "每车12发模块"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "发射车和整架运输车分别由制式3T卡车改装；营不编有机炮兵侦察部队，情报来自战区。",
+        "运输排交替补充／待命；长期大宗弹药与整架装填由协调军承担。",
+        "576发是含两轮换装的库存量，不表示单位时间射速；营部通信及其他车辆未计入52辆。"
+      ],
+      "totals": [
+        {
+          "label": "发射车",
+          "terms": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "value": 16,
+          "unit": "辆"
+        },
+        {
+          "label": "整架运输车",
+          "terms": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "value": 32,
+          "unit": "辆"
+        },
+        {
+          "label": "已明确机动车",
+          "terms": [
+            16,
+            32,
+            4
+          ],
+          "value": 52,
+          "unit": "辆"
+        },
+        {
+          "label": "携行弹量",
+          "terms": [
+            192,
+            384
+          ],
+          "value": 576,
+          "unit": "发"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "armour-bn-44",
+      "section": "armour",
+      "period": "旅属坦克／FSV营的后续统一组织定额",
+      "title": "44车坦克营／FSV营",
+      "sources": [
+        {
+          "label": "19号 · topic-02",
+          "path": "19-1970年代陆军野战体系与战区火力.md#topic-02"
+        },
+        {
+          "label": "10号 · topic-01",
+          "path": "10-二战陆军与空军编制.md#topic-01"
+        }
+      ],
+      "views": [
+        {
+          "title": "同类战斗车辆集中成营",
+          "root": {
+            "name": "坦克营或FSV营",
+            "children": [
+              {
+                "name": "营部战斗车辆",
+                "quantity": 2
+              },
+              {
+                "name": "坦克连或FSV连",
+                "quantity": 3,
+                "ref": "armour-co-14"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "全营为同一类战斗车辆；坦克和FSV不是混合凑满44辆。救援、维修、油弹及其他保障车辆另定。",
+        "早期实际兑现与各旅改编年份未定；不能向1938普通旅、1965年前机械化旅或未改编单位倒填。"
+      ],
+      "totals": [
+        {
+          "label": "战斗车辆",
+          "terms": [
+            2,
+            14,
+            14,
+            14
+          ],
+          "value": 44,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "armour-co-14",
+      "section": "armour",
+      "period": "统一连排定额；各阶段实到另核",
+      "title": "14车装甲连与四车排",
+      "sources": [
+        {
+          "label": "19号 · topic-02",
+          "path": "19-1970年代陆军野战体系与战区火力.md#topic-02"
+        }
+      ],
+      "views": [
+        {
+          "title": "连至车辆排",
+          "root": {
+            "name": "坦克连或FSV连",
+            "children": [
+              {
+                "name": "连部战斗车辆",
+                "quantity": 2
+              },
+              {
+                "name": "车辆排",
+                "quantity": 3,
+                "children": [
+                  {
+                    "name": "排长车",
+                    "quantity": 1
+                  },
+                  {
+                    "name": "其他战斗车辆",
+                    "quantity": 3
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "四车排与连部2车组成14车连；已明确的防空、通信、65E攻坚排等例外不套用四车制。"
+      ],
+      "totals": [
+        {
+          "label": "连战斗车辆",
+          "terms": [
+            2,
+            4,
+            4,
+            4
+          ],
+          "value": 14,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "cw-infantry-bde",
+      "section": "coldwar",
+      "period": "冷战初期普通／半摩托化旅",
+      "title": "普通步兵旅的已知骨架",
+      "sources": [
+        {
+          "label": "03号 · topic-01",
+          "path": "03-陆军军制.md#topic-01"
+        },
+        {
+          "label": "16号 · topic-02",
+          "path": "16-冷战陆军步兵编制演变.md#topic-02"
+        },
+        {
+          "label": "16号 · topic-03",
+          "path": "16-冷战陆军步兵编制演变.md#topic-03"
+        }
+      ],
+      "views": [
+        {
+          "title": "已确认的旅营层级",
+          "root": {
+            "name": "普通步兵旅",
+            "children": [
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "detail": "战后细编未定"
+              },
+              {
+                "name": "步兵营",
+                "quantity": 3,
+                "ref": "cw-infantry-bn"
+              },
+              {
+                "name": "旅属后备营",
+                "quantity": 1,
+                "detail": "战后员额未定"
+              },
+              {
+                "name": "其余旅属单位未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "后备营保留补充轮换职责，不把1938年的243名班员直接套到战后。",
+        "普通徒步营、半摩托化营与摩步营没有永久有机FSV连。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已知骨架；旅属机构未全定"
+    },
+    {
+      "id": "cw-mixed-bde",
+      "section": "coldwar",
+      "period": "冷战初期，继承二战混成旅路线",
+      "title": "旅属HZ-47 FSV营的混成旅",
+      "sources": [
+        {
+          "label": "16号 · topic-03",
+          "path": "16-冷战陆军步兵编制演变.md#topic-03"
+        },
+        {
+          "label": "19号 · topic-02",
+          "path": "19-1970年代陆军野战体系与战区火力.md#topic-02"
+        }
+      ],
+      "views": [
+        {
+          "title": "装甲支援集中在旅",
+          "root": {
+            "name": "冷战初期混成旅",
+            "children": [
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "detail": "细编未定"
+              },
+              {
+                "name": "步兵营",
+                "quantity": 3,
+                "ref": "cw-infantry-bn"
+              },
+              {
+                "name": "旅属HZ-47 FSV营",
+                "quantity": 1,
+                "ref": "armour-bn-44"
+              },
+              {
+                "name": "后备营",
+                "quantity": 1,
+                "detail": "战后员额未定"
+              },
+              {
+                "name": "其余旅属单位未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "40式旅属装甲营逐步转为HZ-47 FSV营；所属旅数、逐旅进度与实到未定。",
+        "四车FSV分队可按任务加强步兵连，不登记为普通步兵营有机连。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "cw-infantry-bn",
+      "section": "coldwar",
+      "period": "1950年代至1960年代普通／半摩托化营",
+      "title": "战后步兵营的火力重组",
+      "sources": [
+        {
+          "label": "16号 · topic-03",
+          "path": "16-冷战陆军步兵编制演变.md#topic-03"
+        },
+        {
+          "label": "16号 · topic-04",
+          "path": "16-冷战陆军步兵编制演变.md#topic-04"
+        }
+      ],
+      "views": [
+        {
+          "title": "营直属火力专业化",
+          "root": {
+            "name": "普通或半摩托化步兵营",
+            "children": [
+              {
+                "name": "营部",
+                "quantity": 1,
+                "detail": "人装未定"
+              },
+              {
+                "name": "步兵连",
+                "quantity": 3,
+                "detail": "连属37式2挺、90毫米炮2门"
+              },
+              {
+                "name": "120毫米迫击炮连",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "迫击炮排",
+                    "quantity": 3,
+                    "detail": "每排2门"
+                  }
+                ]
+              },
+              {
+                "name": "防空排",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "机枪班",
+                    "quantity": 3,
+                    "detail": "每班1挺15毫米"
+                  }
+                ]
+              },
+              {
+                "name": "营属保障细编未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "二战混合重武器连已经撤销；后备机构在旅，不另列营属后备连。",
+        "普通班已由9人压缩至7人；具体9人过渡岗位及变更年份未定。",
+        "半摩托化阶段步兵本体主要徒步，临时载员车辆来自协调军；有机载员车数未定。"
+      ],
+      "totals": [
+        {
+          "label": "营属120毫米迫击炮",
+          "terms": [
+            2,
+            2,
+            2
+          ],
+          "value": 6,
+          "unit": "门"
+        },
+        {
+          "label": "营属15毫米防空机枪",
+          "terms": [
+            1,
+            1,
+            1
+          ],
+          "value": 3,
+          "unit": "挺"
+        }
+      ],
+      "related": [
+        "cw-squad-7"
+      ],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "cw-squad-7",
+      "section": "coldwar",
+      "period": "1950年代起，先于机械化步兵",
+      "title": "战后7人步兵班",
+      "sources": [
+        {
+          "label": "16号 · topic-03",
+          "path": "16-冷战陆军步兵编制演变.md#topic-03"
+        }
+      ],
+      "views": [
+        {
+          "title": "班内对称火力组",
+          "root": {
+            "name": "步兵班",
+            "children": [
+              {
+                "name": "班长",
+                "quantity": 1
+              },
+              {
+                "name": "三人火力组",
+                "quantity": 2,
+                "detail": "每组3人"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "已知结构为1＋3×2，1950年代组内全部岗位未单独锁定，不倒填2014年组长下挂榴弹发射器配置。",
+        "49式推进药筒由普通步兵携用，不额外设专职射手。"
+      ],
+      "totals": [
+        {
+          "label": "班员",
+          "terms": [
+            1,
+            3,
+            3
+          ],
+          "value": 7,
+          "unit": "人"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "cw-mech-bde-1960",
+      "section": "coldwar",
+      "period": "1960年前后成熟机械化旅；1965年前",
+      "title": "早期无坦克营机械化旅",
+      "sources": [
+        {
+          "label": "16号 · topic-05",
+          "path": "16-冷战陆军步兵编制演变.md#topic-05"
+        },
+        {
+          "label": "19号 · topic-02",
+          "path": "19-1970年代陆军野战体系与战区火力.md#topic-02"
+        }
+      ],
+      "views": [
+        {
+          "title": "早期机械化旅",
+          "root": {
+            "name": "早期机械化旅",
+            "children": [
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "detail": "细编未定"
+              },
+              {
+                "name": "机械化步兵营",
+                "quantity": 3,
+                "ref": "cw-mech-bn-1960"
+              },
+              {
+                "name": "后备营",
+                "quantity": 1,
+                "detail": "冷战定额未定"
+              },
+              {
+                "name": "其余直属及保障未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "1955年是实验营阶段，不能把1960年成熟编制和完成年份倒填到试验开始时。",
+        "此时机械化旅不另加有机坦克营；不得把混成旅FSV营自动接到本模板。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "cw-mech-bde-1965",
+      "section": "coldwar",
+      "period": "1965年ZTZ-65服役后，逐旅改编",
+      "title": "增设旅属坦克营的机械化旅",
+      "sources": [
+        {
+          "label": "16号 · topic-05",
+          "path": "16-冷战陆军步兵编制演变.md#topic-05"
+        },
+        {
+          "label": "19号 · topic-02",
+          "path": "19-1970年代陆军野战体系与战区火力.md#topic-02"
+        }
+      ],
+      "views": [
+        {
+          "title": "三机步营与旅属坦克营",
+          "root": {
+            "name": "改编后的机械化旅",
+            "children": [
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "detail": "细编未定"
+              },
+              {
+                "name": "机械化步兵营",
+                "quantity": 3,
+                "ref": "cw-mech-bn-1960"
+              },
+              {
+                "name": "旅属T-65坦克营",
+                "quantity": 1,
+                "ref": "armour-bn-44"
+              },
+              {
+                "name": "后备营",
+                "quantity": 1,
+                "detail": "冷战定额未定"
+              },
+              {
+                "name": "其余直属及保障未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "具体各旅完成年份未定，不等于1965年全军同时配齐。",
+        "营内44辆APC／FSV为有机车辆，任务配属坦克不再与全旅44辆坦克营重复累计。"
+      ],
+      "totals": [
+        {
+          "label": "已知核心战斗车辆",
+          "terms": [
+            44,
+            44,
+            44,
+            44
+          ],
+          "value": 176,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "cw-mech-bn-1960",
+      "section": "coldwar",
+      "period": "1960年前后成熟；1970年代延用核心结构",
+      "title": "47式机械化步兵营",
+      "sources": [
+        {
+          "label": "16号 · topic-05",
+          "path": "16-冷战陆军步兵编制演变.md#topic-05"
+        },
+        {
+          "label": "19号 · topic-02",
+          "path": "19-1970年代陆军野战体系与战区火力.md#topic-02"
+        }
+      ],
+      "views": [
+        {
+          "title": "营骨架",
+          "root": {
+            "name": "47式机械化步兵营",
+            "children": [
+              {
+                "name": "营部APC",
+                "quantity": 2
+              },
+              {
+                "name": "机械化步兵连",
+                "quantity": 3,
+                "ref": "cw-mech-co-1960"
+              },
+              {
+                "name": "营属120毫米迫击炮",
+                "quantity": 6,
+                "detail": "运载形式未定"
+              },
+              {
+                "name": "辎重维修保障细编未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "32辆APC＋12辆HZ-47只算核心履带车辆；不包含迫击炮运载、营辎重或保障车。",
+        "APC车组3人、步兵班7人分列；这一时期排部人数不套用2014年的24人统一定额。"
+      ],
+      "totals": [
+        {
+          "label": "核心APC",
+          "terms": [
+            2,
+            10,
+            10,
+            10
+          ],
+          "value": 32,
+          "unit": "辆"
+        },
+        {
+          "label": "核心FSV",
+          "terms": [
+            4,
+            4,
+            4
+          ],
+          "value": 12,
+          "unit": "辆"
+        },
+        {
+          "label": "核心履带车辆",
+          "terms": [
+            32,
+            12
+          ],
+          "value": 44,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "cw-mech-co-1960",
+      "section": "coldwar",
+      "period": "1960年前后成熟；1970年代延用",
+      "title": "47式机械化步兵连与排",
+      "sources": [
+        {
+          "label": "16号 · topic-05",
+          "path": "16-冷战陆军步兵编制演变.md#topic-05"
+        }
+      ],
+      "views": [
+        {
+          "title": "连部与三个排",
+          "root": {
+            "name": "机械化步兵连",
+            "children": [
+              {
+                "name": "连部",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "APC指挥车",
+                    "quantity": 1
+                  },
+                  {
+                    "name": "2IC乘坐的HZ-47",
+                    "quantity": 1
+                  }
+                ]
+              },
+              {
+                "name": "机械化步兵排",
+                "quantity": 3,
+                "children": [
+                  {
+                    "name": "ZS-47 APC",
+                    "quantity": 3,
+                    "detail": "各3名车组＋7人班"
+                  },
+                  {
+                    "name": "HZ-47排长车",
+                    "quantity": 1
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "连部HZ为前线指挥与火力节点，不是长期闲置备用车。",
+        "不另设传统连属机枪／无后坐力炮重武器分队。"
+      ],
+      "totals": [
+        {
+          "label": "APC",
+          "terms": [
+            1,
+            3,
+            3,
+            3
+          ],
+          "value": 10,
+          "unit": "辆"
+        },
+        {
+          "label": "FSV",
+          "terms": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "value": 4,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "cw-motor-bn-late1960s",
+      "section": "coldwar",
+      "period": "1960年代后期起",
+      "title": "卡车全摩托化步兵营",
+      "sources": [
+        {
+          "label": "16号 · topic-06",
+          "path": "16-冷战陆军步兵编制演变.md#topic-06"
+        },
+        {
+          "label": "19号 · topic-03",
+          "path": "19-1970年代陆军野战体系与战区火力.md#topic-03"
+        }
+      ],
+      "views": [
+        {
+          "title": "主战及营属火力",
+          "root": {
+            "name": "全摩托化步兵营",
+            "children": [
+              {
+                "name": "营部",
+                "quantity": 1,
+                "detail": "0.5T车2辆"
+              },
+              {
+                "name": "摩托化步兵连",
+                "quantity": 3,
+                "ref": "cw-motor-co"
+              },
+              {
+                "name": "120毫米迫击炮连",
+                "quantity": 1,
+                "detail": "6门；1.5T车6辆"
+              },
+              {
+                "name": "防空排",
+                "quantity": 1,
+                "detail": "15毫米3挺；1.5T车1辆"
+              },
+              {
+                "name": "运输排",
+                "quantity": 1,
+                "detail": "3T车4辆"
+              }
+            ]
+          }
+        },
+        {
+          "title": "营运输排",
+          "root": {
+            "name": "营运输排",
+            "quantity": 1,
+            "children": [
+              {
+                "name": "3T普通货车",
+                "quantity": 2
+              },
+              {
+                "name": "3T油罐车",
+                "quantity": 1
+              },
+              {
+                "name": "3T水罐车",
+                "quantity": 1
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "运输排视图是同一营的组成，第二图不另加一个运输排。",
+        "营无有机FSV连或坦克连，可按任务获旅／上级加强。营属后备连及其3T车已取消。",
+        "不把迫击炮组、防空排、油罐和水罐专车当成自由货运车。"
+      ],
+      "totals": [
+        {
+          "label": "原已明确1.5T卡车",
+          "terms": [
+            18,
+            6,
+            1
+          ],
+          "value": 25,
+          "unit": "辆"
+        },
+        {
+          "label": "原已明确3T车辆",
+          "terms": [
+            3,
+            2,
+            1,
+            1
+          ],
+          "value": 7,
+          "unit": "辆"
+        },
+        {
+          "label": "原已明确0.5T车辆",
+          "terms": [
+            3,
+            2
+          ],
+          "value": 5,
+          "unit": "辆"
+        },
+        {
+          "label": "已明确车辆小计",
+          "terms": [
+            25,
+            7,
+            5
+          ],
+          "value": 37,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "cw-motor-bn-1976",
+      "section": "coldwar",
+      "period": "1976年剑导弹成熟后",
+      "title": "增设营属ATGM排的摩步营",
+      "sources": [
+        {
+          "label": "16号 · topic-06",
+          "path": "16-冷战陆军步兵编制演变.md#topic-06"
+        },
+        {
+          "label": "19号 · topic-03",
+          "path": "19-1970年代陆军野战体系与战区火力.md#topic-03"
+        }
+      ],
+      "views": [
+        {
+          "title": "主战及营属火力",
+          "root": {
+            "name": "全摩托化步兵营",
+            "children": [
+              {
+                "name": "营部",
+                "quantity": 1,
+                "detail": "0.5T车2辆"
+              },
+              {
+                "name": "摩托化步兵连",
+                "quantity": 3,
+                "ref": "cw-motor-co"
+              },
+              {
+                "name": "120毫米迫击炮连",
+                "quantity": 1,
+                "detail": "6门；1.5T车6辆"
+              },
+              {
+                "name": "防空排",
+                "quantity": 1,
+                "detail": "15毫米3挺；1.5T车1辆"
+              },
+              {
+                "name": "剑反坦克导弹排",
+                "quantity": 1,
+                "detail": "发射器及人车未定"
+              }
+            ]
+          }
+        },
+        {
+          "title": "营运输排",
+          "root": {
+            "name": "营运输排",
+            "quantity": 1,
+            "children": [
+              {
+                "name": "3T普通货车",
+                "quantity": 2
+              },
+              {
+                "name": "3T油罐车",
+                "quantity": 1
+              },
+              {
+                "name": "3T水罐车",
+                "quantity": 1
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "运输排视图是同一营的组成，第二图不另加一个运输排。",
+        "营无有机FSV连或坦克连，可按任务获旅／上级加强。营属后备连及其3T车已取消。",
+        "37辆只包括明确载员、迫击炮、防空、营部和运输排车辆；ATGM排人车未定，不在原37辆中补造。"
+      ],
+      "totals": [
+        {
+          "label": "原已明确1.5T卡车",
+          "terms": [
+            18,
+            6,
+            1
+          ],
+          "value": 25,
+          "unit": "辆"
+        },
+        {
+          "label": "原已明确3T车辆",
+          "terms": [
+            3,
+            2,
+            1,
+            1
+          ],
+          "value": 7,
+          "unit": "辆"
+        },
+        {
+          "label": "原已明确0.5T车辆",
+          "terms": [
+            3,
+            2
+          ],
+          "value": 5,
+          "unit": "辆"
+        },
+        {
+          "label": "已明确车辆小计",
+          "terms": [
+            25,
+            7,
+            5
+          ],
+          "value": 37,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "cw-motor-co",
+      "section": "coldwar",
+      "period": "1960年代后期全摩托化基准",
+      "title": "卡车摩步连",
+      "sources": [
+        {
+          "label": "16号 · topic-06",
+          "path": "16-冷战陆军步兵编制演变.md#topic-06"
+        }
+      ],
+      "views": [
+        {
+          "title": "载员、辎重与连级火力",
+          "root": {
+            "name": "摩托化步兵连",
+            "children": [
+              {
+                "name": "连部0.5T轻型车",
+                "quantity": 1
+              },
+              {
+                "name": "步兵排",
+                "quantity": 3,
+                "detail": "各1.5T载员车2辆"
+              },
+              {
+                "name": "连辎重3T卡车",
+                "quantity": 1
+              },
+              {
+                "name": "37式重型机枪",
+                "quantity": 2
+              },
+              {
+                "name": "90毫米无后坐力炮",
+                "quantity": 2
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "步兵班沿用战后7人班；本图不据卡车座位倒推连排部员额。"
+      ],
+      "totals": [
+        {
+          "label": "载员1.5T卡车",
+          "terms": [
+            2,
+            2,
+            2
+          ],
+          "value": 6,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "cw-armoured-cavalry",
+      "section": "coldwar",
+      "period": "1970年代战区专业力量",
+      "title": "装甲骑兵战斗群",
+      "sources": [
+        {
+          "label": "19号 · topic-04",
+          "path": "19-1970年代陆军野战体系与战区火力.md#topic-04"
+        }
+      ],
+      "views": [
+        {
+          "title": "已定骨架",
+          "root": {
+            "name": "装甲骑兵战斗群",
+            "children": [
+              {
+                "name": "T-65坦克连",
+                "quantity": 2,
+                "ref": "armour-co-14"
+              },
+              {
+                "name": "HZ-47 FSV连",
+                "quantity": 1,
+                "ref": "armour-co-14"
+              },
+              {
+                "name": "机械化步兵连",
+                "quantity": 1,
+                "ref": "cw-mech-co-1960"
+              },
+              {
+                "name": "群级机关及保障未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "FSV连可用三个4车排加强机步连三个排；机步连本有的有机HZ仍保留，不把加强当成额外固定排级建制。",
+        "全国约20个是旧营级阶段数量，不能当成20个旅。"
+      ],
+      "totals": [
+        {
+          "label": "标准坦克",
+          "terms": [
+            14,
+            14
+          ],
+          "value": 28,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "late-cavalry-regiment",
+      "section": "postcoldwar",
+      "period": "1990年代至2014年撤编前",
+      "title": "装甲骑兵团",
+      "sources": [
+        {
+          "label": "23号 · topic-03",
+          "path": "23-陆军裁军与数字化转型.md#topic-03"
+        },
+        {
+          "label": "19号 · topic-09",
+          "path": "19-1970年代陆军野战体系与战区火力.md#topic-09"
+        }
+      ],
+      "views": [
+        {
+          "title": "行政编成",
+          "root": {
+            "name": "装甲骑兵团",
+            "children": [
+              {
+                "name": "坦克连",
+                "quantity": 3,
+                "ref": "armour-co-14"
+              },
+              {
+                "name": "机械化步兵连",
+                "quantity": 3,
+                "ref": "cw-mech-co-1960"
+              },
+              {
+                "name": "团属FSV连",
+                "quantity": 1,
+                "ref": "armour-co-14"
+              },
+              {
+                "name": "团部与保障细编未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "行政树显示机步连本有4辆FSV；团属14辆FSV中9辆战时前推各机步排，余5辆仍由团掌握。",
+        "加强后每机步连10 APC＋7 FSV，其中新增3辆来自团属FSV连，不能再另加14辆。",
+        "2014年撤编，不作为当代旅内常设骑兵团。"
+      ],
+      "totals": [
+        {
+          "label": "坦克",
+          "terms": [
+            14,
+            14,
+            14
+          ],
+          "value": 42,
+          "unit": "辆"
+        },
+        {
+          "label": "APC",
+          "terms": [
+            10,
+            10,
+            10
+          ],
+          "value": 30,
+          "unit": "辆"
+        },
+        {
+          "label": "全团FSV",
+          "terms": [
+            4,
+            4,
+            4,
+            14
+          ],
+          "value": 26,
+          "unit": "辆"
+        }
+      ],
+      "related": [
+        "mission-fast-group-1998"
+      ],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "modern-personnel",
+      "section": "modern",
+      "period": "2014年后机步、摩步、战斗工兵",
+      "title": "统一7人班与24人排",
+      "sources": [
+        {
+          "label": "41号 · topic-06",
+          "path": "41-2014年摩托化BTG与CTG编制战术.md#topic-06"
+        }
+      ],
+      "views": [
+        {
+          "title": "排、班与火力组",
+          "root": {
+            "name": "排属人员",
+            "children": [
+              {
+                "name": "排部",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "排长",
+                    "quantity": 1
+                  },
+                  {
+                    "name": "副排长",
+                    "quantity": 1
+                  },
+                  {
+                    "name": "排军士长",
+                    "quantity": 1
+                  }
+                ]
+              },
+              {
+                "name": "七人班",
+                "quantity": 3,
+                "children": [
+                  {
+                    "name": "班长",
+                    "quantity": 1
+                  },
+                  {
+                    "name": "三人火力组",
+                    "quantity": 2,
+                    "children": [
+                      {
+                        "name": "组长",
+                        "quantity": 1
+                      },
+                      {
+                        "name": "步枪手",
+                        "quantity": 2
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "24人不含装甲车辆专业车组，也不含连部和连属专业小组。",
+        "每组组长10式步枪配40毫米下挂；战斗工兵每组三人须覆盖爆破、排障资质，不增加人员。",
+        "不可倒套1950—1970年代的排部岗位。"
+      ],
+      "totals": [
+        {
+          "label": "班人员",
+          "terms": [
+            1,
+            3,
+            3
+          ],
+          "value": 7,
+          "unit": "人"
+        },
+        {
+          "label": "排人员",
+          "terms": [
+            3,
+            7,
+            7,
+            7
+          ],
+          "value": 24,
+          "unit": "人"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "modern-motor-bde",
+      "section": "modern",
+      "period": "2014年后，05式体系",
+      "title": "现代摩托化旅",
+      "sources": [
+        {
+          "label": "41号 · topic-03",
+          "path": "41-2014年摩托化BTG与CTG编制战术.md#topic-03"
+        },
+        {
+          "label": "23号 · topic-10",
+          "path": "23-陆军裁军与数字化转型.md#topic-10"
+        }
+      ],
+      "views": [
+        {
+          "title": "已知固定核心",
+          "root": {
+            "name": "摩托化步兵旅",
+            "children": [
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "detail": "员额未定"
+              },
+              {
+                "name": "步兵营",
+                "quantity": 3,
+                "ref": "modern-motor-bn"
+              },
+              {
+                "name": "旅属坦克营",
+                "quantity": 1,
+                "ref": "armour-bn-44"
+              },
+              {
+                "name": "旅属后备营",
+                "quantity": 1,
+                "detail": "现代定额未定"
+              },
+              {
+                "name": "其余直属及保障未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "176只算三营已知44辆基干车与旅属44辆坦克；机关、后备、工程、医疗及保障车另定。",
+        "旧10摩步＋4机步是过渡规模方案，不由本模板决定全国旅数。"
+      ],
+      "totals": [
+        {
+          "label": "防空满额时已知核心车辆",
+          "terms": [
+            44,
+            44,
+            44,
+            44
+          ],
+          "value": 176,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "modern-motor-bn",
+      "section": "modern",
+      "period": "2014—2015年基准；05式B型2015年成熟",
+      "title": "现代摩步营有机编制",
+      "sources": [
+        {
+          "label": "41号 · topic-03",
+          "path": "41-2014年摩托化BTG与CTG编制战术.md#topic-03"
+        },
+        {
+          "label": "27号 · topic-08",
+          "path": "27-05式轮式车族与HZ-00采购转型.md#topic-08"
+        }
+      ],
+      "views": [
+        {
+          "title": "基干营的永久编制",
+          "root": {
+            "name": "05式摩托化步兵营",
+            "children": [
+              {
+                "name": "营部",
+                "quantity": 1,
+                "detail": "人员及车辆未定"
+              },
+              {
+                "name": "摩托化步兵连",
+                "quantity": 3,
+                "ref": "modern-motor-co"
+              },
+              {
+                "name": "120毫米自行迫击炮连",
+                "quantity": 1,
+                "detail": "6车；47／05底盘渐进换装"
+              },
+              {
+                "name": "近程自行防空排",
+                "quantity": 1,
+                "detail": "2车，实际常缺编"
+              },
+              {
+                "name": "其余保障人车未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "没有有机坦克连；BTG获得坦克时用临时配属树。",
+        "迫击炮连不强行分为三个两车排，也不固定给每个CTG两门。",
+        "27 APC与9 FSV只含九个排的已知车辆，不能据此断定连部、营部没有额外车辆。"
+      ],
+      "totals": [
+        {
+          "label": "满编防空时已知基干车辆",
+          "terms": [
+            27,
+            9,
+            6,
+            2
+          ],
+          "value": 44,
+          "unit": "辆"
+        },
+        {
+          "label": "九个摩步排排属人员",
+          "terms": [
+            72,
+            72,
+            72
+          ],
+          "value": 216,
+          "unit": "人（车组等另计）"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "modern-motor-co",
+      "section": "modern",
+      "period": "2014年后",
+      "title": "05式摩步连",
+      "sources": [
+        {
+          "label": "41号 · topic-03",
+          "path": "41-2014年摩托化BTG与CTG编制战术.md#topic-03"
+        },
+        {
+          "label": "41号 · topic-06",
+          "path": "41-2014年摩托化BTG与CTG编制战术.md#topic-06"
+        }
+      ],
+      "views": [
+        {
+          "title": "连部、三排及连属小组",
+          "root": {
+            "name": "摩托化步兵连",
+            "children": [
+              {
+                "name": "连部",
+                "quantity": 1,
+                "detail": "人数及车辆未定"
+              },
+              {
+                "name": "摩步排",
+                "quantity": 3,
+                "ref": "modern-wheel-platoon"
+              },
+              {
+                "name": "连属防空小组",
+                "quantity": 2,
+                "detail": "通常兼修医护；人数未定"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "72为三个排的人员，不是完整连员额；连为72＋连部x＋专业组y。"
+      ],
+      "totals": [
+        {
+          "label": "三个排人员",
+          "terms": [
+            24,
+            24,
+            24
+          ],
+          "value": 72,
+          "unit": "人（连部、专业组另计）"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "modern-wheel-platoon",
+      "section": "modern",
+      "period": "2014年后05式摩步排",
+      "title": "轮式摩步排的人员与车辆",
+      "sources": [
+        {
+          "label": "41号 · topic-03",
+          "path": "41-2014年摩托化BTG与CTG编制战术.md#topic-03"
+        },
+        {
+          "label": "27号 · topic-03",
+          "path": "27-05式轮式车族与HZ-00采购转型.md#topic-03"
+        }
+      ],
+      "views": [
+        {
+          "title": "三班车和排级FSV",
+          "root": {
+            "name": "轮式摩步排",
+            "children": [
+              {
+                "name": "ZS-05 APC",
+                "quantity": 3,
+                "detail": "各2名车组＋7人班"
+              },
+              {
+                "name": "HZ-05 FSV",
+                "quantity": 1,
+                "detail": "3名车组＋3个排部席位"
+              },
+              {
+                "name": "排属人员",
+                "detail": "24人，车组另计",
+                "ref": "modern-personnel"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "HZ-05是有机排级FSV；配属坦克不替代或额外重复增加排内FSV。",
+        "人员分支与车辆分支是同一排的两种构成，不把乘员和载员重复相加。"
+      ],
+      "totals": [
+        {
+          "label": "排有机战斗车辆",
+          "terms": [
+            3,
+            1
+          ],
+          "value": 4,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "modern-mech-bde",
+      "section": "modern",
+      "period": "2014年后；2020年起13式逐步换装",
+      "title": "现代机械化旅",
+      "sources": [
+        {
+          "label": "28号 · topic-02",
+          "path": "28-13式履带步兵战车族.md#topic-02"
+        },
+        {
+          "label": "23号 · topic-10",
+          "path": "23-陆军裁军与数字化转型.md#topic-10"
+        }
+      ],
+      "views": [
+        {
+          "title": "已知固定核心",
+          "root": {
+            "name": "现代机械化旅",
+            "children": [
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "detail": "员额未定"
+              },
+              {
+                "name": "步兵营",
+                "quantity": 3,
+                "ref": "modern-mech-bn"
+              },
+              {
+                "name": "旅属坦克营",
+                "quantity": 1,
+                "ref": "armour-bn-44"
+              },
+              {
+                "name": "旅属后备营",
+                "quantity": 1,
+                "detail": "现代定额未定"
+              },
+              {
+                "name": "其余直属及保障未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "固定核心为三机步营＋旅属坦克营；2020年开始换装，不等于所有营在当年完成13式化。",
+        "13式连部、营部和支援车辆总数未定，因此不计算13式旅全车数。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "modern-mech-bn",
+      "section": "modern",
+      "period": "2014年后；2020年起前沿排渐换13式",
+      "title": "现代履带机步营已知骨架",
+      "sources": [
+        {
+          "label": "28号 · topic-02",
+          "path": "28-13式履带步兵战车族.md#topic-02"
+        },
+        {
+          "label": "41号 · topic-06",
+          "path": "41-2014年摩托化BTG与CTG编制战术.md#topic-06"
+        },
+        {
+          "label": "41号 · topic-07",
+          "path": "41-2014年摩托化BTG与CTG编制战术.md#topic-07"
+        }
+      ],
+      "views": [
+        {
+          "title": "已确认部分",
+          "root": {
+            "name": "现代机械化步兵营",
+            "children": [
+              {
+                "name": "营部",
+                "quantity": 1,
+                "detail": "完整车辆与员额未定"
+              },
+              {
+                "name": "机械化步兵连",
+                "quantity": 3,
+                "ref": "modern-ifv-co"
+              },
+              {
+                "name": "营属120毫米自行迫击炮连",
+                "quantity": 1,
+                "detail": "6车，底盘按换装阶段"
+              },
+              {
+                "name": "近程自行防空排",
+                "quantity": 1,
+                "detail": "标准2车，常缺编"
+              },
+              {
+                "name": "保障及支援车辆未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "13式下钻为2020年开始列装的新排型；换装前仍有3 APC＋1 HZ-00的旧排，不能一图抹掉过渡期。",
+        "支援任务能用05式轮式底盘优先用05式，不因机步营换13式就全员保障履带化。",
+        "旧32 APC＋12 FSV只是历史核心模板，不能补平新13式营全车数。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "modern-ifv-co",
+      "section": "modern",
+      "period": "2020年起13式列装单位",
+      "title": "13式机步连已知部分",
+      "sources": [
+        {
+          "label": "28号 · topic-02",
+          "path": "28-13式履带步兵战车族.md#topic-02"
+        },
+        {
+          "label": "41号 · topic-06",
+          "path": "41-2014年摩托化BTG与CTG编制战术.md#topic-06"
+        }
+      ],
+      "views": [
+        {
+          "title": "三排与尚未定额的连部",
+          "root": {
+            "name": "13式机械化步兵连",
+            "children": [
+              {
+                "name": "连部",
+                "quantity": 1,
+                "detail": "车辆与员额未定"
+              },
+              {
+                "name": "机步排",
+                "quantity": 3,
+                "ref": "modern-ifv-platoon"
+              },
+              {
+                "name": "连属防空小组",
+                "quantity": 2,
+                "detail": "通常兼修医护，人数未定"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "12辆只算三个排的IFV；不能再擅自加连部2辆作为已定编制。"
+      ],
+      "totals": [
+        {
+          "label": "三个排已明确IFV",
+          "terms": [
+            4,
+            4,
+            4
+          ],
+          "value": 12,
+          "unit": "辆（连部另定）"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "modern-ifv-platoon",
+      "section": "modern",
+      "period": "2020年开始列装；未定义全军换装完成年",
+      "title": "四车13式机步排",
+      "sources": [
+        {
+          "label": "28号 · topic-02",
+          "path": "28-13式履带步兵战车族.md#topic-02"
+        },
+        {
+          "label": "41号 · topic-06",
+          "path": "41-2014年摩托化BTG与CTG编制战术.md#topic-06"
+        }
+      ],
+      "views": [
+        {
+          "title": "三辆班车与一辆排部车",
+          "root": {
+            "name": "13式机步排",
+            "children": [
+              {
+                "name": "BZ-13班车",
+                "quantity": 3,
+                "detail": "各3名车组＋7人班"
+              },
+              {
+                "name": "BZ-13排长车",
+                "quantity": 1,
+                "detail": "专业车组完整；后部排部席位"
+              },
+              {
+                "name": "排属人员",
+                "detail": "24人，车组另计",
+                "ref": "modern-personnel"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "第四辆是排长／排部IFV，不是第四个7人步兵班；观察、火力协调或空军联络等按任务取舍，不增常设岗位。",
+        "IFV已承担原FSV作用，不另加一辆HZ-00。"
+      ],
+      "totals": [
+        {
+          "label": "每排IFV",
+          "terms": [
+            3,
+            1
+          ],
+          "value": 4,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "modern-btg",
+      "section": "modern",
+      "period": "2014年后；按具体任务临时组成",
+      "title": "旅内BTG临时加强",
+      "sources": [
+        {
+          "label": "41号 · topic-03",
+          "path": "41-2014年摩托化BTG与CTG编制战术.md#topic-03"
+        }
+      ],
+      "views": [
+        {
+          "title": "基干营与获配属力量",
+          "root": {
+            "name": "临时BTG",
+            "children": [
+              {
+                "name": "旅内基干摩步营",
+                "quantity": 1,
+                "ref": "modern-motor-bn"
+              },
+              {
+                "name": "旅属坦克连或排",
+                "detail": "可无；按任务",
+                "ref": "armour-co-14",
+                "relation": "attached"
+              },
+              {
+                "name": "专业工兵连或排",
+                "detail": "可无或集中加强",
+                "ref": "modern-ce-co",
+                "relation": "attached"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "基干营三个摩步连形成三个CTG，不是在三个连之外另设三个常设CTG。",
+        "44辆基干车＋14辆配属坦克才是58辆已知车；56／58还取决于两辆防空车是否计入。",
+        "一个BTG的配属坦克不能在全旅44辆坦克营之外再累计一遍。"
+      ],
+      "totals": [
+        {
+          "label": "完整坦克连加强且防空满额",
+          "terms": [
+            44,
+            14
+          ],
+          "value": 58,
+          "unit": "辆（已知小计）"
+        }
+      ],
+      "related": [
+        "modern-ctg"
+      ],
+      "basis": "临时战术编组；非永久建制"
+    },
+    {
+      "id": "modern-ctg",
+      "section": "modern",
+      "period": "2014年后；条件性合成加强",
+      "title": "CTG连战斗群",
+      "sources": [
+        {
+          "label": "41号 · topic-04",
+          "path": "41-2014年摩托化BTG与CTG编制战术.md#topic-04"
+        }
+      ],
+      "views": [
+        {
+          "title": "完整连与任务加强",
+          "root": {
+            "name": "临时CTG",
+            "children": [
+              {
+                "name": "有机摩步连",
+                "quantity": 1,
+                "ref": "modern-motor-co"
+              },
+              {
+                "name": "坦克排",
+                "children": [
+                  {
+                    "name": "ZTZ-90坦克",
+                    "quantity": 4
+                  }
+                ],
+                "detail": "获配属时1排",
+                "relation": "attached"
+              },
+              {
+                "name": "战斗工兵连或排",
+                "detail": "按任务可无或多排",
+                "relation": "attached"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "三个摩步排保持完整；坦克排、工兵力量集中掌握，不机械拆给每个排。",
+        "CTG基干12辆排属车，获4辆坦克排时已知16辆；连部与其他保障车另定。"
+      ],
+      "totals": [
+        {
+          "label": "获一个完整坦克排后的已知车",
+          "terms": [
+            12,
+            4
+          ],
+          "value": 16,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "临时战术编组；加强量按任务"
+    },
+    {
+      "id": "modern-ce-bn",
+      "section": "modern",
+      "period": "2014—2015年及后续专业CE基准",
+      "title": "四连制战斗工兵营",
+      "sources": [
+        {
+          "label": "47号 · topic-01",
+          "path": "47-现代战斗工兵营与专业车辆.md#topic-01"
+        }
+      ],
+      "views": [
+        {
+          "title": "专业营的常设结构",
+          "root": {
+            "name": "战斗工兵营",
+            "children": [
+              {
+                "name": "营部",
+                "quantity": 1,
+                "detail": "人装未定"
+              },
+              {
+                "name": "普通CEC",
+                "quantity": 3,
+                "ref": "modern-ce-co"
+              },
+              {
+                "name": "重装工兵连",
+                "quantity": 1,
+                "ref": "modern-ce-heavy-co"
+              },
+              {
+                "name": "其余保障细编未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "综合排障归协调军，不作为CE营第四连；第四连为三专业排的重装连。",
+        "不恢复全国工兵营番号台账；仅管理通用编制模板。"
+      ],
+      "totals": [
+        {
+          "label": "九个普通CE排人员",
+          "terms": [
+            72,
+            72,
+            72
+          ],
+          "value": 216,
+          "unit": "人（机关、车组、专业组另计）"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "modern-ce-co",
+      "section": "modern",
+      "period": "2014年后",
+      "title": "普通战斗工兵连与旧ZS-47排",
+      "sources": [
+        {
+          "label": "47号 · topic-01",
+          "path": "47-现代战斗工兵营与专业车辆.md#topic-01"
+        },
+        {
+          "label": "41号 · topic-06",
+          "path": "41-2014年摩托化BTG与CTG编制战术.md#topic-06"
+        }
+      ],
+      "views": [
+        {
+          "title": "CEC连属重火力",
+          "root": {
+            "name": "普通战斗工兵连",
+            "children": [
+              {
+                "name": "连部",
+                "quantity": 1,
+                "detail": "员额未定"
+              },
+              {
+                "name": "CE排",
+                "quantity": 3,
+                "ref": "modern-ce-platoon"
+              },
+              {
+                "name": "37式重型机枪组",
+                "quantity": 2
+              },
+              {
+                "name": "无后坐力炮组",
+                "quantity": 2
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "连为72＋连部x＋专业组y；不将机枪与无后坐力炮组直接归入每个CE排。",
+        "无后坐力炮的现代具体型号未确认，不用1950年代90毫米型号直接倒填。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "modern-ce-platoon",
+      "section": "modern",
+      "period": "2014年人员基准；既有ZS-47配车阶段",
+      "title": "战斗工兵排",
+      "sources": [
+        {
+          "label": "47号 · topic-01",
+          "path": "47-现代战斗工兵营与专业车辆.md#topic-01"
+        },
+        {
+          "label": "41号 · topic-06",
+          "path": "41-2014年摩托化BTG与CTG编制战术.md#topic-06"
+        }
+      ],
+      "views": [
+        {
+          "title": "排属人员与运输",
+          "root": {
+            "name": "普通CE排",
+            "children": [
+              {
+                "name": "排属人员",
+                "detail": "24人；车组另计",
+                "ref": "modern-personnel"
+              },
+              {
+                "name": "ZS-47 APC",
+                "quantity": 4,
+                "detail": "既有配车基线"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "排没有有机HZ火力支援车，外围掩护由受援合成部队提供。",
+        "普通运兵车后续转向05式；逐批实装和05式排内确切配车另核，不把旧4车直接当成所有新阶段实到。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "modern-ce-heavy-co",
+      "section": "modern",
+      "period": "2014—2015年专业编制；少数攻坚排实装",
+      "title": "三排制重装工兵连",
+      "sources": [
+        {
+          "label": "47号 · topic-02",
+          "path": "47-现代战斗工兵营与专业车辆.md#topic-02"
+        }
+      ],
+      "views": [
+        {
+          "title": "三个专业排与车辆例外",
+          "root": {
+            "name": "重装工兵连",
+            "children": [
+              {
+                "name": "连部",
+                "quantity": 1,
+                "detail": "人车未定"
+              },
+              {
+                "name": "防化喷火排",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "FH-47",
+                    "quantity": 4
+                  }
+                ]
+              },
+              {
+                "name": "机械排雷排",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "PL-47",
+                    "quantity": 4
+                  }
+                ]
+              },
+              {
+                "name": "特殊攻坚排",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "ZTZ-65E",
+                    "quantity": 2
+                  }
+                ],
+                "detail": "仅少数营实装"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "65E排法定2车，不套四车通则；2015年751营确有两辆E2，不能由此推为所有营普及。",
+        "PL-47排不另设旧两班扫雷突击工兵，下车工程人员由普通CEC提供。"
+      ],
+      "totals": [
+        {
+          "label": "三排全实装的专业车",
+          "terms": [
+            4,
+            4,
+            2
+          ],
+          "value": 10,
+          "unit": "辆"
+        },
+        {
+          "label": "仅前两排实装的典型专业车",
+          "terms": [
+            4,
+            4
+          ],
+          "value": 8,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "modern-signal-bn",
+      "section": "modern",
+      "period": "2015年前后战区集中掌握",
+      "title": "专业通信营通用模板",
+      "sources": [
+        {
+          "label": "43号 · topic-04",
+          "path": "43-2015年空气战术互联网与战区通信营.md#topic-04"
+        }
+      ],
+      "views": [
+        {
+          "title": "营、连与双车排",
+          "root": {
+            "name": "专业通信营",
+            "children": [
+              {
+                "name": "营部",
+                "quantity": 1,
+                "detail": "员额及车数未定"
+              },
+              {
+                "name": "通信连",
+                "quantity": "1—3",
+                "children": [
+                  {
+                    "name": "通信排",
+                    "quantity": 3,
+                    "children": [
+                      {
+                        "name": "地面中继通信车",
+                        "quantity": 1
+                      },
+                      {
+                        "name": "卫星通信车",
+                        "quantity": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "维修保障编制未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "营连数随战区／任务决定，不将霍姆斯双连制当成所有营固定两连。",
+        "两车展开后有线连接，不是两个独立排；通信网络拓扑不改变部队指挥链。"
+      ],
+      "totals": [],
+      "related": [
+        "mission-signal-homs"
+      ],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "air-cavalry-regiment",
+      "section": "modern",
+      "period": "冷战后期至1998年等已定阶段",
+      "title": "空中骑兵团",
+      "sources": [
+        {
+          "label": "24号 · topic-07",
+          "path": "24-陆军航空兵与直升机平台.md#topic-07"
+        }
+      ],
+      "views": [
+        {
+          "title": "侦察、打击和有限机降",
+          "root": {
+            "name": "空中骑兵团",
+            "children": [
+              {
+                "name": "侦察直升机连",
+                "quantity": 1,
+                "detail": "ZZ-79麻雀；架数未定"
+              },
+              {
+                "name": "武装直升机连",
+                "quantity": 3,
+                "detail": "鱼鹰；架数未定"
+              },
+              {
+                "name": "机降连",
+                "quantity": 1
+              },
+              {
+                "name": "运输直升机排",
+                "quantity": 1,
+                "detail": "YZ-70白鹭；架数未定"
+              },
+              {
+                "name": "团部及保障细编未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "它是既有专业团，图形集中管理不把团改名为旅。",
+        "原第6团改成特种作战直属航空队后，不能将本模板直接套为改编后的航空队定额。",
+        "大宗战役航空运输主要由战役协调军掌握。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "special-command",
+      "section": "special",
+      "period": "当前已确认组织；转隶年份各自待定",
+      "title": "特种作战司令部三个旅",
+      "sources": [
+        {
+          "label": "57号 · topic-04",
+          "path": "57-特战第56旅与特种作战部队编制沿革.md#topic-04"
+        }
+      ],
+      "views": [
+        {
+          "title": "三个旅及直属航空队",
+          "root": {
+            "name": "特种作战司令部",
+            "children": [
+              {
+                "name": "特战第56旅",
+                "quantity": 1,
+                "ref": "special-bde-56"
+              },
+              {
+                "name": "第118轻步兵旅",
+                "quantity": 1,
+                "ref": "light-bdes-current"
+              },
+              {
+                "name": "第234轻步兵旅",
+                "quantity": 1,
+                "ref": "light-bdes-current"
+              },
+              {
+                "name": "直属航空队",
+                "quantity": 1,
+                "detail": "原第6空骑团；机队未定"
+              },
+              {
+                "name": "司令部机关及保障员额未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "现已明确九个作战营经三个旅管理；不把它们还原为九个平行直属营。",
+        "航空队直属司令部；旅获得其支援不改变建制归属。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "special-56-airborne",
+      "section": "special",
+      "period": "1960年代，具体改编年未定",
+      "title": "第56空降旅",
+      "sources": [
+        {
+          "label": "57号 · topic-01",
+          "path": "57-特战第56旅与特种作战部队编制沿革.md#topic-01"
+        }
+      ],
+      "views": [
+        {
+          "title": "已知旅营层级",
+          "root": {
+            "name": "第56空降旅",
+            "children": [
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "detail": "细编未定"
+              },
+              {
+                "name": "空降营",
+                "quantity": 3
+              },
+              {
+                "name": "保障编成未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "三个营的专业化节点沿既有历史承接；营以下连排编制未确认，不套用普通机摩步营。",
+        "旅部和保障全额未定，不按1938年普通旅自动补齐火力或运输。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已知旅营骨架；下级未全定"
+    },
+    {
+      "id": "special-56-1973",
+      "section": "special",
+      "period": "1973年起",
+      "title": "第56特种空降旅",
+      "sources": [
+        {
+          "label": "57号 · topic-01",
+          "path": "57-特战第56旅与特种作战部队编制沿革.md#topic-01"
+        }
+      ],
+      "views": [
+        {
+          "title": "已知旅营层级",
+          "root": {
+            "name": "第56特种空降旅",
+            "children": [
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "detail": "细编未定"
+              },
+              {
+                "name": "特种空降营",
+                "quantity": 3
+              },
+              {
+                "name": "保障编成未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "三个营的专业化节点沿既有历史承接；营以下连排编制未确认，不套用普通机摩步营。",
+        "旅部和保障全额未定，不按1938年普通旅自动补齐火力或运输。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已知旅营骨架；下级未全定"
+    },
+    {
+      "id": "special-bde-56",
+      "section": "special",
+      "period": "至1983年前后完成专业化；现名启用年未定",
+      "title": "特战第56旅",
+      "sources": [
+        {
+          "label": "57号 · topic-02",
+          "path": "57-特战第56旅与特种作战部队编制沿革.md#topic-02"
+        }
+      ],
+      "views": [
+        {
+          "title": "三个专业营",
+          "root": {
+            "name": "特战第56旅",
+            "children": [
+              {
+                "name": "第1特种空中突击营",
+                "quantity": 1,
+                "detail": "白虎；1983年改现名"
+              },
+              {
+                "name": "第2特种空降营",
+                "quantity": 1,
+                "detail": "云豹"
+              },
+              {
+                "name": "第3特种空降营",
+                "quantity": 1,
+                "detail": "雪狼"
+              },
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "detail": "编制未定"
+              },
+              {
+                "name": "保障编成未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "特战营以下连排与小组人装尚未确认，以排及更小分队行动不等于已定24人普通步兵排。",
+        "不编造44辆旅属坦克营、普通旅车辆或后备营定额。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "light-bdes-1940s",
+      "section": "special",
+      "period": "1940年代，日本投降前改编；精确年份未定",
+      "title": "两个海军陆战旅",
+      "sources": [
+        {
+          "label": "57号 · topic-03",
+          "path": "57-特战第56旅与特种作战部队编制沿革.md#topic-03"
+        }
+      ],
+      "views": [
+        {
+          "title": "第118海军陆战旅",
+          "root": {
+            "name": "第118海军陆战旅",
+            "children": [
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "detail": "细编未定"
+              },
+              {
+                "name": "第118海军陆战队营",
+                "quantity": 1
+              },
+              {
+                "name": "第309海军陆战队营",
+                "quantity": 1
+              },
+              {
+                "name": "第584海军陆战队营",
+                "quantity": 1
+              },
+              {
+                "name": "旅属保障编成未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        },
+        {
+          "title": "第234海军陆战旅",
+          "root": {
+            "name": "第234海军陆战旅",
+            "children": [
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "detail": "细编未定"
+              },
+              {
+                "name": "第693海军陆战队营",
+                "quantity": 1
+              },
+              {
+                "name": "第759海军陆战队营",
+                "quantity": 1
+              },
+              {
+                "name": "第794海军陆战队营",
+                "quantity": 1
+              },
+              {
+                "name": "旅属保障编成未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "两张图是两个旅，每旅三个作战营；旅号来自原150条台账，不新增至152旅。",
+        "海军陆战、滨海战斗至轻步兵路线按旅承接；现行轻步兵称谓与特战司令部隶属不倒填到早期。",
+        "所属营的专业徒步战斗、林地、水域与机降／空降能力已定，营内连排和旅属保障尚未定；不据普通旅模板凑编。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "旅营隶属已定；详细编制留白"
+    },
+    {
+      "id": "light-bdes-1960s",
+      "section": "special",
+      "period": "1960年代改称；具体年份未定",
+      "title": "两个滨海战斗旅",
+      "sources": [
+        {
+          "label": "57号 · topic-03",
+          "path": "57-特战第56旅与特种作战部队编制沿革.md#topic-03"
+        }
+      ],
+      "views": [
+        {
+          "title": "第118滨海战斗旅",
+          "root": {
+            "name": "第118滨海战斗旅",
+            "children": [
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "detail": "细编未定"
+              },
+              {
+                "name": "第118滨海战斗营",
+                "quantity": 1
+              },
+              {
+                "name": "第309滨海战斗营",
+                "quantity": 1
+              },
+              {
+                "name": "第584滨海战斗营",
+                "quantity": 1
+              },
+              {
+                "name": "旅属保障编成未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        },
+        {
+          "title": "第234滨海战斗旅",
+          "root": {
+            "name": "第234滨海战斗旅",
+            "children": [
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "detail": "细编未定"
+              },
+              {
+                "name": "第693滨海战斗营",
+                "quantity": 1
+              },
+              {
+                "name": "第759滨海战斗营",
+                "quantity": 1
+              },
+              {
+                "name": "第794滨海战斗营",
+                "quantity": 1
+              },
+              {
+                "name": "旅属保障编成未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "两张图是两个旅，每旅三个作战营；旅号来自原150条台账，不新增至152旅。",
+        "海军陆战、滨海战斗至轻步兵路线按旅承接；现行轻步兵称谓与特战司令部隶属不倒填到早期。",
+        "所属营的专业徒步战斗、林地、水域与机降／空降能力已定，营内连排和旅属保障尚未定；不据普通旅模板凑编。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "旅营隶属已定；详细编制留白"
+    },
+    {
+      "id": "light-bdes-current",
+      "section": "special",
+      "period": "最终改名与转隶年份未定；当前轻步兵建制",
+      "title": "第118、第234轻步兵旅",
+      "sources": [
+        {
+          "label": "57号 · topic-03",
+          "path": "57-特战第56旅与特种作战部队编制沿革.md#topic-03"
+        }
+      ],
+      "views": [
+        {
+          "title": "第118轻步兵旅",
+          "root": {
+            "name": "第118轻步兵旅",
+            "children": [
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "detail": "细编未定"
+              },
+              {
+                "name": "第118轻步兵营",
+                "quantity": 1
+              },
+              {
+                "name": "第309轻步兵营",
+                "quantity": 1
+              },
+              {
+                "name": "第584轻步兵营",
+                "quantity": 1
+              },
+              {
+                "name": "旅属保障编成未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        },
+        {
+          "title": "第234轻步兵旅",
+          "root": {
+            "name": "第234轻步兵旅",
+            "children": [
+              {
+                "name": "旅部",
+                "quantity": 1,
+                "detail": "细编未定"
+              },
+              {
+                "name": "第693轻步兵营",
+                "quantity": 1
+              },
+              {
+                "name": "第759轻步兵营",
+                "quantity": 1
+              },
+              {
+                "name": "第794轻步兵营",
+                "quantity": 1
+              },
+              {
+                "name": "旅属保障编成未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "两张图是两个旅，每旅三个作战营；旅号来自原150条台账，不新增至152旅。",
+        "海军陆战、滨海战斗至轻步兵路线按旅承接；现行轻步兵称谓与特战司令部隶属不倒填到早期。",
+        "所属营的专业徒步战斗、林地、水域与机降／空降能力已定，营内连排和旅属保障尚未定；不据普通旅模板凑编。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "旅营隶属已定；详细编制留白"
+    },
+    {
+      "id": "mission-fast-group-1998",
+      "section": "missions",
+      "period": "1998年沙漠军刀；任务编组",
+      "title": "装甲骑兵快速集群",
+      "sources": [
+        {
+          "label": "25号 · topic-04",
+          "path": "25-1998科威特战争与中国中东战区.md#topic-04"
+        }
+      ],
+      "views": [
+        {
+          "title": "一坦克连与一加强机步连",
+          "root": {
+            "name": "快速集群",
+            "children": [
+              {
+                "name": "坦克连",
+                "quantity": 1,
+                "detail": "T-65系列14辆",
+                "relation": "task"
+              },
+              {
+                "name": "加强机步连",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "机步排",
+                    "quantity": 3,
+                    "children": [
+                      {
+                        "name": "APC",
+                        "quantity": 3
+                      },
+                      {
+                        "name": "FSV",
+                        "quantity": 2
+                      }
+                    ]
+                  },
+                  {
+                    "name": "连部",
+                    "quantity": 1,
+                    "children": [
+                      {
+                        "name": "APC",
+                        "quantity": 1
+                      },
+                      {
+                        "name": "FSV",
+                        "quantity": 1
+                      }
+                    ]
+                  }
+                ],
+                "relation": "task"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "每骑兵团形成3群，两团共6群；各团仍掌握5辆团级FSV，不在每群中重复计入。",
+        "10 APC＋7 FSV含3辆来自团属FSV连的任务加强；不是机步连永久多出3辆。",
+        "1998年海外坦克为T-65系列，无ZTZ-90。"
+      ],
+      "totals": [
+        {
+          "label": "已知核心车辆",
+          "terms": [
+            14,
+            10,
+            7
+          ],
+          "value": 31,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "战役任务编组；非永久旅营"
+    },
+    {
+      "id": "mission-cmef-1998",
+      "section": "missions",
+      "period": "1998年增援完成后的阶段性战役序列",
+      "title": "CMEF营级任务构成",
+      "sources": [
+        {
+          "label": "25号 · topic-04",
+          "path": "25-1998科威特战争与中国中东战区.md#topic-04"
+        }
+      ],
+      "views": [
+        {
+          "title": "地面机动力量",
+          "root": {
+            "name": "1998年中国中东战区",
+            "children": [
+              {
+                "name": "重型纵队",
+                "quantity": 3,
+                "children": [
+                  {
+                    "name": "机械化营",
+                    "quantity": 2,
+                    "relation": "task"
+                  },
+                  {
+                    "name": "摩托化营",
+                    "quantity": 1,
+                    "relation": "task"
+                  }
+                ],
+                "relation": "task"
+              },
+              {
+                "name": "轮替机械化营",
+                "quantity": 3,
+                "relation": "task"
+              },
+              {
+                "name": "装甲骑兵团",
+                "quantity": 2,
+                "ref": "late-cavalry-regiment",
+                "relation": "task"
+              },
+              {
+                "name": "独立坦克营",
+                "quantity": 1,
+                "detail": "旧稿3连42辆；营部车未定",
+                "relation": "task"
+              }
+            ]
+          }
+        },
+        {
+          "title": "专业加强与保障",
+          "root": {
+            "name": "同一远征战区",
+            "children": [
+              {
+                "name": "空中骑兵团",
+                "quantity": 1,
+                "ref": "air-cavalry-regiment",
+                "relation": "task"
+              },
+              {
+                "name": "J-59F中队",
+                "quantity": 2,
+                "detail": "非旅营有机",
+                "relation": "task"
+              },
+              {
+                "name": "战区直属155毫米炮营",
+                "quantity": 1,
+                "detail": "2月增援",
+                "relation": "task"
+              },
+              {
+                "name": "配属各纵队155毫米炮营",
+                "quantity": 3,
+                "detail": "每纵队1营；2月增援",
+                "relation": "task"
+              },
+              {
+                "name": "战役协调军及远征保障",
+                "relation": "support"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "三纵队的2机＋1摩是该次任务构成，旅号与旅部介入关系未定，不登记为常设混合旅。",
+        "西侧OG由梁光烈兼任指挥，但具体辖哪几个纵队未定；树不填造其归属。",
+        "独立坦克营旧战役稿只列三连42辆，不能用44车标准自动补成已核实实到数。",
+        "6万余人为整个远征战区口径，含协调、航空及保障，不是营战斗人员合计。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "战役阶段快照；旅级衔接待定"
+    },
+    {
+      "id": "mission-homs-2015",
+      "section": "missions",
+      "period": "2015年霍姆斯战役；旅号衔接未定",
+      "title": "霍姆斯OG与参战营任务关系",
+      "sources": [
+        {
+          "label": "40号 · topic-02",
+          "path": "40-2015年叙利亚反恐战争与多国军事干预.md#topic-02"
+        }
+      ],
+      "views": [
+        {
+          "title": "地面任务指挥",
+          "root": {
+            "name": "霍姆斯OG",
+            "children": [
+              {
+                "name": "第37纵队司令部",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "前沿摩托化BTG",
+                    "quantity": 2,
+                    "detail": "5th、7th；共同第一梯队",
+                    "relation": "task"
+                  },
+                  {
+                    "name": "54th BTG",
+                    "quantity": 1,
+                    "children": [
+                      {
+                        "name": "第751 CE营",
+                        "quantity": 1,
+                        "ref": "modern-ce-bn",
+                        "relation": "attached"
+                      }
+                    ],
+                    "detail": "第二梯队专业攻坚",
+                    "relation": "task"
+                  },
+                  {
+                    "name": "96th BTG",
+                    "quantity": 1,
+                    "detail": "预备、接替",
+                    "relation": "task"
+                  }
+                ],
+                "relation": "task"
+              },
+              {
+                "name": "245th BTG",
+                "quantity": 1,
+                "detail": "直属OG，交通线机动安全",
+                "relation": "task"
+              }
+            ]
+          }
+        },
+        {
+          "title": "OG受领专业力量",
+          "root": {
+            "name": "同一霍姆斯OG",
+            "children": [
+              {
+                "name": "双连制通信营",
+                "quantity": 1,
+                "ref": "mission-signal-homs",
+                "relation": "attached"
+              },
+              {
+                "name": "J-59K中队",
+                "quantity": 1,
+                "relation": "attached"
+              },
+              {
+                "name": "战役协调任务力量",
+                "detail": "战区本级仍留长期保障",
+                "relation": "attached"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "五个BTG各额外获1个随队后勤连，共5连；本树不将这些连设成永久营有机。",
+        "韩维钧兼OG军团司令与37纵队司令；245th直属OG，不归37纵队。",
+        "常设旅号、五营各所属旅、旅部位置及随队后勤经旅接入方式仍未确认；不得填到150旅台账的同号旅上。",
+        "751营攻坚排2015年确有2辆ZTZ-65E2，其余专业车辆逐车实到未全定。",
+        "约1万人包含战区、OG、航空和保障，不从各模板纸面额外重复相加。"
+      ],
+      "totals": [],
+      "related": [],
+      "basis": "已定战役任务关系；非永久隶属"
+    },
+    {
+      "id": "mission-signal-homs",
+      "section": "missions",
+      "period": "2015年霍姆斯OG受领的双连制",
+      "title": "霍姆斯专业通信营",
+      "sources": [
+        {
+          "label": "43号 · topic-04",
+          "path": "43-2015年空气战术互联网与战区通信营.md#topic-04"
+        },
+        {
+          "label": "40号 · topic-04",
+          "path": "40-2015年叙利亚反恐战争与多国军事干预.md#topic-04"
+        }
+      ],
+      "views": [
+        {
+          "title": "营、连与双车排",
+          "root": {
+            "name": "专业通信营",
+            "children": [
+              {
+                "name": "营部",
+                "quantity": 1,
+                "detail": "员额及车数未定"
+              },
+              {
+                "name": "通信连",
+                "quantity": 2,
+                "children": [
+                  {
+                    "name": "通信排",
+                    "quantity": 3,
+                    "children": [
+                      {
+                        "name": "地面中继通信车",
+                        "quantity": 1
+                      },
+                      {
+                        "name": "卫星通信车",
+                        "quantity": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "维修保障编制未定",
+                "relation": "unknown"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "2个通信连、6个通信排、12辆主要专业通信车辆；营部及保障车未计入。",
+        "战区行政隶属保留，OG按任务统筹；不平均给五个BTG各一个通信排。"
+      ],
+      "totals": [
+        {
+          "label": "主要通信车辆",
+          "terms": [
+            6,
+            6
+          ],
+          "value": 12,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "该战役已定双连制；非全军统一连数"
+    }
+  ],
+  "gaps": [
+    {
+      "name": "1938年前独立营",
+      "note": "旧800／900／1000人等口径已被新旅制覆盖；此前具体阶段的完整可核对连排与保障树不足，不恢复成现行模板。",
+      "label": "03、10号（历史边界）",
+      "path": "10-二战陆军与空军编制.md"
+    },
+    {
+      "name": "1955年实验机械化营",
+      "note": "实验存在已定，精确试验编制未定；不直接套1960年成熟32 APC＋12 FSV。",
+      "label": "16号",
+      "path": "16-冷战陆军步兵编制演变.md#topic-05"
+    },
+    {
+      "name": "1950年代9人班过渡",
+      "note": "9→7的过程已定，9人阶段具体岗位和11→9的年份未定。",
+      "label": "16号",
+      "path": "16-冷战陆军步兵编制演变.md#topic-12"
+    },
+    {
+      "name": "冷战卡车摩步旅的完整旅属机构",
+      "note": "营级37车模板、旅属后备及混成旅FSV来源已定；各时期旅部、直属火力和全旅后勤精确编制未全定，不从1938年模板原样外推。",
+      "label": "16、19号",
+      "path": "19-1970年代陆军野战体系与战区火力.md#topic-10"
+    },
+    {
+      "name": "105／155／180毫米专业炮兵营",
+      "note": "任务、配属边界及部分火炮特征已定；完整营连排、每营炮数或发射器数未定。43式250毫米营则已有可画模板。",
+      "label": "10、19号",
+      "path": "19-1970年代陆军野战体系与战区火力.md#topic-10"
+    },
+    {
+      "name": "特战、海军陆战／滨海与轻步兵营以下",
+      "note": "旅营数量和归属已确认；作战连排、小组员额及旅部保障未全定，不用普通机摩步模板填空。",
+      "label": "57号",
+      "path": "57-特战第56旅与特种作战部队编制沿革.md#topic-05"
+    },
+    {
+      "name": "13式连营全车数",
+      "note": "排4辆、每连3排的12辆排属IFV已知；连部、营部与支援车辆未定，不填14车连或全旅满车总额。",
+      "label": "28号",
+      "path": "28-13式履带步兵战车族.md#topic-05"
+    },
+    {
+      "name": "各时期全国旅数与类型比例",
+      "note": "300历史峰值、150条旅史、单旅编制为不同口径；旧14旅方案只作过渡沿革，不能据模板数或营数反推现役旅总数。",
+      "label": "23号",
+      "path": "23-陆军裁军与数字化转型.md#topic-10"
+    }
+  ]
+}
