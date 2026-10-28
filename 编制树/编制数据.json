@@ -1039,23 +1039,14 @@
             "name": "1942年混成团",
             "children": [
               {
-                "name": "一线步兵营",
-                "quantity": 3,
-                "ref": "ww2-bn-1938"
+                "name": "标准步兵团完整建制",
+                "ref": "ww2-rgt-1938",
+                "detail": "2998人、3个一线营及全部团直属单位"
               },
               {
-                "name": "后备营",
-                "quantity": 1,
-                "ref": "ww2-reserve-1938"
-              },
-              {
-                "name": "40式坦克连",
-                "quantity": 1,
-                "ref": "ww2-tank-co-40"
-              },
-              {
-                "name": "团部及原团直属单位",
-                "ref": "ww2-rgt-1938"
+                "name": "有机40式坦克连",
+                "ref": "ww2-tank-co-40",
+                "detail": "64人、14辆40式坦克"
               }
             ]
           }
@@ -1102,23 +1093,14 @@
             "name": "1944年后混成团",
             "children": [
               {
-                "name": "一线步兵营",
-                "quantity": 3,
-                "ref": "ww2-bn-1938"
+                "name": "标准步兵团完整建制",
+                "ref": "ww2-rgt-1938",
+                "detail": "2998人、3个一线营及全部团直属单位"
               },
               {
-                "name": "后备营",
-                "quantity": 1,
-                "ref": "ww2-reserve-1938"
-              },
-              {
-                "name": "团属40式坦克营",
-                "quantity": 1,
-                "ref": "ww2-tank-bn-40"
-              },
-              {
-                "name": "团部及其余直属单位",
-                "ref": "ww2-rgt-1938"
+                "name": "有机40式坦克营",
+                "ref": "ww2-tank-bn-40",
+                "detail": "296人、44辆40式及6辆3T卡车"
               }
             ]
           }
