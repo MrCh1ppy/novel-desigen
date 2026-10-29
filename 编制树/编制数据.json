@@ -13,8 +13,8 @@
     },
     {
       "id": "coldwar",
-      "title": "1950—1970年代：徒步、机步与卡车摩步",
-      "note": "普通徒步团与卡车摩托化团不编有机FSV营，纵队独立FSV营可常态配属、协训；机械化步兵排内有机FSV，1965年T-65列装后机械化团逐步增设团属坦克营。1970年代改革任务链另见RTG／BTG／CTG模板。"
+      "title": "1950—1970年代：标准步兵与机械化步兵",
+      "note": "1970年代标准步兵团无有机载员卡车，战役运力按任务配属；纵队独立FSV营可加强标准步兵团。机械化步兵排有机FSV，1965年以后机械化团逐步增设团属坦克营。"
     },
     {
       "id": "postcoldwar",
@@ -1534,7 +1534,7 @@
       ],
       "notes": [
         "后备营保留补充轮换职责，不把1938年的243名班员直接套到战后。",
-        "普通徒步营、半摩托化营与摩步营没有永久有机FSV连。"
+        "战后普通步兵与半摩托化早期阶段无永久有机FSV连；1970年代标准步兵另见新模板。"
       ],
       "totals": [],
       "related": [],
@@ -2023,60 +2023,40 @@
       "basis": "已确认编制；缺项另标"
     },
     {
-      "id": "cw-motor-rgt",
+      "id": "cw-standard-rgt-1970s",
       "section": "coldwar",
-      "period": "1960年代后期全摩托化后；逐团改编进度未定",
-      "title": "冷战卡车摩托化步兵团",
+      "period": "1970年代标准徒步团；1976年后采用75式营级导弹",
+      "title": "标准徒步步兵团",
       "sources": [
         {
           "label": "16号 · topic-06",
           "path": "16-冷战陆军步兵编制演变.md#topic-06"
-        },
-        {
-          "label": "19号 · topic-02",
-          "path": "19-1970年代陆军野战体系与战区火力.md#topic-02"
         }
       ],
       "views": [
         {
-          "title": "卡车摩步团的常设主战单位",
+          "title": "团级有机部队",
           "root": {
-            "name": "冷战摩托化团",
+            "name": "标准步兵团",
             "children": [
               {
                 "name": "团部",
                 "quantity": 1,
-                "detail": "细编未定"
+                "detail": "员额未定"
               },
               {
-                "name": "摩托化步兵营",
+                "name": "标准步兵营",
                 "quantity": 3,
-                "ref": "cw-motor-bn-late1960s"
-              }
-            ]
-          }
-        },
-        {
-          "title": "纵队独立FSV营与摩步团的长期协训、临时配属",
-          "root": {
-            "name": "纵队受领的独立HZ-47 FSV营",
-            "detail": "44辆同类FSV标准；不属摩步团有机编制",
-            "children": [
+                "detail": "1976年后",
+                "ref": "cw-standard-bn-1976"
+              },
               {
-                "name": "卡车摩托化步兵团（可长期协训）",
-                "relation": "attached",
-                "detail": "按任务使用、需要时整体或拆分加强"
-              }
-            ]
-          }
-        },
-        {
-          "title": "团直属支援与保障",
-          "root": {
-            "name": "冷战摩托化团",
-            "children": [
+                "name": "团属后备营",
+                "quantity": 1,
+                "detail": "补充、轮换，员额未定"
+              },
               {
-                "name": "摩托化工兵连",
+                "name": "工兵连",
                 "quantity": 1
               },
               {
@@ -2096,52 +2076,52 @@
           }
         },
         {
-          "title": "团直属后备与运输",
+          "title": "团运输营",
           "root": {
-            "name": "冷战摩托化团",
+            "name": "团运输营",
+            "quantity": 1,
             "children": [
               {
-                "name": "团直属后备营",
-                "quantity": 1,
-                "detail": "乘坐卡车；来源未定"
+                "name": "5T运输连",
+                "quantity": 2,
+                "detail": "各6辆"
               },
               {
-                "name": "团属运输营",
+                "name": "2.5T运输连",
                 "quantity": 1,
-                "children": [
-                  {
-                    "name": "3吨卡车运输连",
-                    "quantity": 2,
-                    "detail": "每连6辆"
-                  },
-                  {
-                    "name": "1.5吨卡车运输连",
-                    "quantity": 1,
-                    "detail": "6辆"
-                  },
-                  {
-                    "name": "汽修连",
-                    "quantity": 1,
-                    "detail": "汽车维修为主，纵队FSV营的专业回收由其上级体系负责"
-                  }
-                ]
+                "detail": "6辆"
               },
               {
-                "name": "其他直属机构细编未定",
-                "relation": "unknown"
+                "name": "汽修连",
+                "quantity": 1,
+                "detail": "编制待定"
+              }
+            ]
+          }
+        },
+        {
+          "title": "纵队独立FSV任务配属",
+          "root": {
+            "name": "纵队独立HZ-47 FSV营",
+            "detail": "非团有机",
+            "children": [
+              {
+                "name": "标准步兵团",
+                "relation": "attached",
+                "detail": "可长期协训，战时按任务加强"
               }
             ]
           }
         }
       ],
       "notes": [
-        "摩托化团不编有机FSV营或连；纵队可将独立FSV营相对固定地配给摩步团训练、协同，但永久建制仍属上级，战时可拆分到营连。",
-        "运输营18辆卡车为已列运输连车辆；后备营车辆来源待定。上级配属FSV营的履带维修回收装备不计入摩步团有机车辆。",
-        "1976年起适用增设反坦克导弹排的摩步营模板；逐团改编进度未定。"
+        "取消独立卡车摩托化步兵永久团型；普通步兵需乘车时由战役协调体系另行配属运力，不改动团的行政隶属。",
+        "团属运输营原2个3T运输连、1个1.5T运输连改用2个5T、1个2.5T运输连（各6辆），不等于全团载员能力。",
+        "团无永久有机FSV营或坦克营，团属后备营负责兵员补充与轮换。"
       ],
       "totals": [
         {
-          "label": "运输营运输连卡车",
+          "label": "团运输营载货卡车",
           "terms": [
             6,
             6,
@@ -2152,311 +2132,517 @@
         }
       ],
       "related": [
-        "cw-motor-bn-1976"
+        "cw-standard-bn-1976"
       ],
       "basis": "已确认编制；缺项另标"
     },
     {
-      "id": "cw-motor-bn-late1960s",
+      "id": "cw-standard-bn-1976",
       "section": "coldwar",
-      "period": "1960年代后期起",
-      "title": "卡车全摩托化步兵营",
+      "period": "1976年75式「剑」成熟后的标准步兵营",
+      "title": "标准步兵营与三排九车运输连",
       "sources": [
         {
-          "label": "16号 · topic-06",
-          "path": "16-冷战陆军步兵编制演变.md#topic-06"
-        },
-        {
-          "label": "19号 · topic-03",
-          "path": "19-1970年代陆军野战体系与战区火力.md#topic-03"
+          "label": "16号 · topic-07",
+          "path": "16-冷战陆军步兵编制演变.md#topic-07"
         }
       ],
       "views": [
         {
-          "title": "主战及营属火力",
+          "title": "标准营永久有机编制",
           "root": {
-            "name": "全摩托化步兵营",
+            "name": "标准步兵营",
             "children": [
               {
                 "name": "营部",
                 "quantity": 1,
-                "detail": "0.5T车2辆"
+                "detail": "人员未定"
               },
               {
-                "name": "摩托化步兵连",
+                "name": "标准步兵连",
                 "quantity": 3,
-                "ref": "cw-motor-co"
+                "detail": "每连107人",
+                "ref": "cw-standard-co-1970s"
               },
               {
-                "name": "120毫米迫击炮连",
+                "name": "重武器连",
                 "quantity": 1,
-                "detail": "6门；1.5T车6辆"
+                "detail": "防空3组、75式6组、81mm迫击炮6门",
+                "ref": "cw-standard-heavy-co-1976"
               },
               {
-                "name": "防空排",
+                "name": "运输连",
                 "quantity": 1,
-                "detail": "15毫米3挺；1.5T车1辆"
-              },
-              {
-                "name": "运输排",
-                "quantity": 1,
-                "detail": "3T车4辆"
+                "detail": "2.5T六车、5T三车",
+                "ref": "cw-standard-transport-1970s"
               }
             ]
           }
         },
         {
-          "title": "营运输排",
+          "title": "战役汽车运输配属",
           "root": {
-            "name": "营运输排",
-            "quantity": 1,
+            "name": "战役协调体系／上级运输单位",
             "children": [
               {
-                "name": "3T普通货车",
-                "quantity": 2
-              },
-              {
-                "name": "3T油罐车",
-                "quantity": 1
-              },
-              {
-                "name": "3T水罐车",
-                "quantity": 1
+                "name": "临时运输标准步兵营人员",
+                "relation": "attached",
+                "detail": "不属于营有机载员车辆"
               }
             ]
           }
         }
       ],
       "notes": [
-        "运输排视图是同一营的组成，第二图不另加一个运输排。",
-        "营无有机FSV连或坦克连，可按任务获团／上级加强；团属后备与保障车辆另计。",
-        "不把迫击炮组、防空排、油罐和水罐专车当成自由货运车。"
+        "三个107人步兵连合计321人；营部、重武器连和运输连员额未定，不得写成全营321人。",
+        "75式6个发射组通常分散部署，重武器连的行政隶属不变。",
+        "营运输连9辆、标称载重30吨；旧全摩托化营37辆有机车辆方案已被覆盖。"
       ],
       "totals": [
         {
-          "label": "原已明确1.5T卡车",
+          "label": "三个步兵连人数",
+          "terms": [
+            107,
+            107,
+            107
+          ],
+          "value": 321,
+          "unit": "人"
+        },
+        {
+          "label": "三个步兵连37式重型机枪",
+          "terms": [
+            3,
+            3,
+            3
+          ],
+          "value": 9,
+          "unit": "挺"
+        },
+        {
+          "label": "三个步兵连班用37式自动步枪",
           "terms": [
             18,
-            6,
-            1
-          ],
-          "value": 25,
-          "unit": "辆"
-        },
-        {
-          "label": "原已明确3T车辆",
-          "terms": [
-            3,
-            2,
-            1,
-            1
-          ],
-          "value": 7,
-          "unit": "辆"
-        },
-        {
-          "label": "原已明确0.5T车辆",
-          "terms": [
-            3,
-            2
-          ],
-          "value": 5,
-          "unit": "辆"
-        },
-        {
-          "label": "已明确车辆小计",
-          "terms": [
-            25,
-            7,
-            5
-          ],
-          "value": 37,
-          "unit": "辆"
-        }
-      ],
-      "related": [],
-      "basis": "已确认编制；缺项另标"
-    },
-    {
-      "id": "cw-motor-bn-1976",
-      "section": "coldwar",
-      "period": "1976年剑导弹成熟后",
-      "title": "增设营属ATGM排的摩步营",
-      "sources": [
-        {
-          "label": "16号 · topic-06",
-          "path": "16-冷战陆军步兵编制演变.md#topic-06"
-        },
-        {
-          "label": "19号 · topic-03",
-          "path": "19-1970年代陆军野战体系与战区火力.md#topic-03"
-        }
-      ],
-      "views": [
-        {
-          "title": "主战及营属火力",
-          "root": {
-            "name": "全摩托化步兵营",
-            "children": [
-              {
-                "name": "营部",
-                "quantity": 1,
-                "detail": "0.5T车2辆"
-              },
-              {
-                "name": "摩托化步兵连",
-                "quantity": 3,
-                "ref": "cw-motor-co"
-              },
-              {
-                "name": "120毫米迫击炮连",
-                "quantity": 1,
-                "detail": "6门；1.5T车6辆"
-              },
-              {
-                "name": "防空排",
-                "quantity": 1,
-                "detail": "15毫米3挺；1.5T车1辆"
-              },
-              {
-                "name": "剑反坦克导弹排",
-                "quantity": 1,
-                "detail": "发射器及人车未定"
-              }
-            ]
-          }
-        },
-        {
-          "title": "营运输排",
-          "root": {
-            "name": "营运输排",
-            "quantity": 1,
-            "children": [
-              {
-                "name": "3T普通货车",
-                "quantity": 2
-              },
-              {
-                "name": "3T油罐车",
-                "quantity": 1
-              },
-              {
-                "name": "3T水罐车",
-                "quantity": 1
-              }
-            ]
-          }
-        }
-      ],
-      "notes": [
-        "运输排视图是同一营的组成，第二图不另加一个运输排。",
-        "营无有机FSV连或坦克连，可按任务获团／上级加强；团属后备与保障车辆另计。",
-        "37辆只包括明确载员、迫击炮、防空、营部和运输排车辆；ATGM排人车未定，不在原37辆中补造。"
-      ],
-      "totals": [
-        {
-          "label": "原已明确1.5T卡车",
-          "terms": [
             18,
-            6,
-            1
+            18
           ],
-          "value": 25,
-          "unit": "辆"
+          "value": 54,
+          "unit": "支"
         },
         {
-          "label": "原已明确3T车辆",
-          "terms": [
-            3,
-            2,
-            1,
-            1
-          ],
-          "value": 7,
-          "unit": "辆"
-        },
-        {
-          "label": "原已明确0.5T车辆",
-          "terms": [
-            3,
-            2
-          ],
-          "value": 5,
-          "unit": "辆"
-        },
-        {
-          "label": "已明确车辆小计",
-          "terms": [
-            25,
-            7,
-            5
-          ],
-          "value": 37,
-          "unit": "辆"
-        }
-      ],
-      "related": [],
-      "basis": "已确认编制；缺项另标"
-    },
-    {
-      "id": "cw-motor-co",
-      "section": "coldwar",
-      "period": "1960年代后期全摩托化基准",
-      "title": "卡车摩步连",
-      "sources": [
-        {
-          "label": "16号 · topic-06",
-          "path": "16-冷战陆军步兵编制演变.md#topic-06"
-        }
-      ],
-      "views": [
-        {
-          "title": "载员、辎重与连级火力",
-          "root": {
-            "name": "摩托化步兵连",
-            "children": [
-              {
-                "name": "连部0.5T轻型车",
-                "quantity": 1
-              },
-              {
-                "name": "步兵排",
-                "quantity": 3,
-                "detail": "各1.5T载员车2辆"
-              },
-              {
-                "name": "连辎重3T卡车",
-                "quantity": 1
-              },
-              {
-                "name": "37式重型机枪",
-                "quantity": 2
-              },
-              {
-                "name": "90毫米无后坐力炮",
-                "quantity": 2
-              }
-            ]
-          }
-        }
-      ],
-      "notes": [
-        "步兵班沿用战后7人班；本图不据卡车座位倒推连排部员额。"
-      ],
-      "totals": [
-        {
-          "label": "载员1.5T卡车",
+          "label": "81毫米迫击炮",
           "terms": [
             2,
             2,
             2
           ],
           "value": 6,
+          "unit": "门"
+        },
+        {
+          "label": "运输连卡车",
+          "terms": [
+            3,
+            3,
+            3
+          ],
+          "value": 9,
           "unit": "辆"
         }
       ],
       "related": [],
       "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "cw-standard-co-1970s",
+      "section": "coldwar",
+      "period": "1970年代标准徒步步兵连",
+      "title": "107人标准步兵连",
+      "sources": [
+        {
+          "label": "16号 · topic-07",
+          "path": "16-冷战陆军步兵编制演变.md#topic-07"
+        }
+      ],
+      "views": [
+        {
+          "title": "连部、步兵排及机枪排",
+          "root": {
+            "name": "标准步兵连",
+            "children": [
+              {
+                "name": "连部",
+                "quantity": 1,
+                "detail": "16人，指挥3、行政军需3、通信5、炊事5"
+              },
+              {
+                "name": "步兵排",
+                "quantity": 3,
+                "detail": "各24人",
+                "ref": "cw-standard-platoon-1970s"
+              },
+              {
+                "name": "机枪排",
+                "quantity": 1,
+                "detail": "19人，3挺37式重机枪",
+                "ref": "cw-standard-mg-platoon-1970s"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "全连107人；没有连属60毫米迫击炮或90毫米无后坐力炮。",
+        "排无有机载员车，临时任务乘车的驾驶员不计入本连。"
+      ],
+      "totals": [
+        {
+          "label": "全连人员",
+          "terms": [
+            16,
+            24,
+            24,
+            24,
+            19
+          ],
+          "value": 107,
+          "unit": "人"
+        },
+        {
+          "label": "连属重型通用机枪",
+          "terms": [
+            1,
+            1,
+            1
+          ],
+          "value": 3,
+          "unit": "挺"
+        }
+      ],
+      "related": [],
+      "basis": "已确认编制；缺项另标"
+    },
+    {
+      "id": "cw-standard-platoon-1970s",
+      "section": "coldwar",
+      "period": "1970年代标准步兵排",
+      "title": "24人步兵排与7人班",
+      "sources": [
+        {
+          "label": "16号 · topic-07",
+          "path": "16-冷战陆军步兵编制演变.md#topic-07"
+        }
+      ],
+      "views": [
+        {
+          "title": "步兵排与对称火力组",
+          "root": {
+            "name": "步兵排",
+            "children": [
+              {
+                "name": "排部",
+                "quantity": 1,
+                "detail": "3人：排长、排军士长、通信兵"
+              },
+              {
+                "name": "步兵班",
+                "quantity": 3,
+                "detail": "每班7人",
+                "children": [
+                  {
+                    "name": "班长",
+                    "quantity": 1
+                  },
+                  {
+                    "name": "三人火力组",
+                    "quantity": 2,
+                    "detail": "组长、37式自动步枪手和半自动步枪手各1"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "每排24人＝3人排部＋3个7人班；取消副排长。",
+        "每班2支37式自动步枪、至少2具破甲型49式推进药筒，另可携不兼容手榴弹的专用高爆破片型；无专职火箭射手。",
+        "排不拥有有机载员卡车。"
+      ],
+      "totals": [
+        {
+          "label": "全排人员",
+          "terms": [
+            3,
+            7,
+            7,
+            7
+          ],
+          "value": 24,
+          "unit": "人"
+        },
+        {
+          "label": "班用37式自动步枪",
+          "terms": [
+            2,
+            2,
+            2
+          ],
+          "value": 6,
+          "unit": "支"
+        }
+      ],
+      "related": [],
+      "basis": "编制已确认，未定项另标"
+    },
+    {
+      "id": "cw-standard-mg-platoon-1970s",
+      "section": "coldwar",
+      "period": "1970年代连属机枪排",
+      "title": "19人机枪排",
+      "sources": [
+        {
+          "label": "16号 · topic-07",
+          "path": "16-冷战陆军步兵编制演变.md#topic-07"
+        }
+      ],
+      "views": [
+        {
+          "title": "排部与机枪班",
+          "root": {
+            "name": "机枪排",
+            "children": [
+              {
+                "name": "排部",
+                "quantity": 1,
+                "detail": "3人：排长、枪炮军士长、通信兵"
+              },
+              {
+                "name": "机枪班",
+                "quantity": 1,
+                "detail": "16人",
+                "children": [
+                  {
+                    "name": "军需军士",
+                    "quantity": 1,
+                    "detail": "行政与弹药管理，不指挥作战"
+                  },
+                  {
+                    "name": "机枪组",
+                    "quantity": 3,
+                    "detail": "每组5人、1挺37式重型通用机枪"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "机枪组接受连长或任务加强的受援步兵排排长的战术指挥；军需军士担任行政班长。"
+      ],
+      "totals": [
+        {
+          "label": "全排人员",
+          "terms": [
+            3,
+            1,
+            5,
+            5,
+            5
+          ],
+          "value": 19,
+          "unit": "人"
+        },
+        {
+          "label": "重型通用机枪",
+          "terms": [
+            1,
+            1,
+            1
+          ],
+          "value": 3,
+          "unit": "挺"
+        }
+      ],
+      "related": [],
+      "basis": "编制已确认，未定项另标"
+    },
+    {
+      "id": "cw-standard-heavy-co-1976",
+      "section": "coldwar",
+      "period": "1976年后营属重武器连",
+      "title": "防空、反坦克导弹及81毫米迫击炮",
+      "sources": [
+        {
+          "label": "16号 · topic-07",
+          "path": "16-冷战陆军步兵编制演变.md#topic-07"
+        }
+      ],
+      "views": [
+        {
+          "title": "三个专业武器排",
+          "root": {
+            "name": "重武器连",
+            "children": [
+              {
+                "name": "连部",
+                "quantity": 1,
+                "detail": "人员未定"
+              },
+              {
+                "name": "防空排",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "单兵防空导弹组",
+                    "quantity": 3,
+                    "detail": "型号、人员未定"
+                  }
+                ]
+              },
+              {
+                "name": "75式剑反坦克导弹排",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "ATGM组",
+                    "quantity": 6,
+                    "detail": "通常分散部署，人员未定"
+                  }
+                ]
+              },
+              {
+                "name": "81毫米迫击炮排",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "迫击炮班",
+                    "quantity": 3,
+                    "detail": "每班2门81毫米迫击炮"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "反坦克排仅一个、下辖六个发射组，惯常分散加强受援单位。",
+        "迫击炮排属于重武器连，不独立直属营。",
+        "各排部和连部人员、射击观察及保障岗位未定。"
+      ],
+      "totals": [
+        {
+          "label": "75式剑ATGM组",
+          "terms": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "value": 6,
+          "unit": "组"
+        },
+        {
+          "label": "防空导弹组",
+          "terms": [
+            1,
+            1,
+            1
+          ],
+          "value": 3,
+          "unit": "组"
+        },
+        {
+          "label": "81毫米迫击炮",
+          "terms": [
+            2,
+            2,
+            2
+          ],
+          "value": 6,
+          "unit": "门"
+        }
+      ],
+      "related": [],
+      "basis": "编制已确认，未定项另标"
+    },
+    {
+      "id": "cw-standard-transport-1970s",
+      "section": "coldwar",
+      "period": "1970年代营属运输连",
+      "title": "9辆卡车运输连",
+      "sources": [
+        {
+          "label": "16号 · topic-07",
+          "path": "16-冷战陆军步兵编制演变.md#topic-07"
+        }
+      ],
+      "views": [
+        {
+          "title": "三排九车",
+          "root": {
+            "name": "营运输连",
+            "children": [
+              {
+                "name": "第一运输排",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "2.5T卡车",
+                    "quantity": 3,
+                    "detail": "6×4，三个步兵连辎重"
+                  }
+                ]
+              },
+              {
+                "name": "第二运输排",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "5T卡车",
+                    "quantity": 3,
+                    "detail": "6×6，重武器连与弹药"
+                  }
+                ]
+              },
+              {
+                "name": "第三运输排",
+                "quantity": 1,
+                "children": [
+                  {
+                    "name": "2.5T卡车",
+                    "quantity": 3,
+                    "detail": "6×4，营部及综合运输"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "notes": [
+        "卡车共9辆、额定载重30吨；6辆2.5T，3辆5T。",
+        "第二排使用5T为现行讨论安排；车辆和车组全部有机隶属运输连，保障对象不改变隶属。",
+        "人员和具体车组定额未定；全营载员车辆另由战役协调体系按任务提供。"
+      ],
+      "totals": [
+        {
+          "label": "运输连车辆",
+          "terms": [
+            3,
+            3,
+            3
+          ],
+          "value": 9,
+          "unit": "辆"
+        }
+      ],
+      "related": [],
+      "basis": "编制已确认，未定项另标"
     },
     {
       "id": "cw-armoured-cavalry",
@@ -4985,8 +5171,8 @@
       "path": "16-冷战陆军步兵编制演变.md#topic-12"
     },
     {
-      "name": "冷战卡车摩步团的完整团属机构",
-      "note": "营级37车模板、团属后备及纵队独立FSV营的长期协训规则已定，独立FSV营历史来源待核；各时期团部、直属火力和全团后勤精确编制未全定，不从1938年模板原样外推。",
+      "name": "1970年代标准步兵团与营的人员及专业保障",
+      "note": "1970年代取消永久卡车摩步团型；标准营已确认3个107人连、重武器连及9车运输连；营部、专业分队员额、团级保障及战役载员配属细节待定。",
       "label": "16、19号",
       "path": "19-1970年代陆军野战体系与战区火力.md#topic-10"
     },
