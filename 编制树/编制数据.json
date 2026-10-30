@@ -6829,12 +6829,14 @@
                 "name": "机步营有机自行120毫米迫击炮",
                 "quantity": 3,
                 "detail": "各6辆、合计18辆",
-                "ref": "cw-mech-bn-mortar-1976"
+                "ref": "cw-mech-bn-mortar-1976",
+                "relation": "support"
               },
               {
                 "name": "纵队155毫米炮兵及前出FO",
                 "quantity": 1,
-                "detail": "非本团有机装备，FO可下放RTG"
+                "detail": "非本团有机装备，FO可下放RTG",
+                "relation": "support"
               }
             ]
           }
