@@ -11,7 +11,8 @@ DATA = Path(__file__).with_name('编制数据.json')
 OUTPUT = ROOT / '58-陆军历代团营编制树.md'
 RELATIONS = {'organic': '-->', 'attached': '-. 配属 .->',
              'support': '-. 支援 .->', 'task': '-. 任务指挥 .->',
-             'unknown': '-. 待定 .->'}
+             'unknown': '-. 待定 .->', 'voluntary': '-. 自愿、择优 .->',
+             'by-job': '-. 按岗位需求 .->', 'selective': '-. 独立选拔 .->'}
 
 
 def nodes(node, depth=0):
@@ -99,7 +100,8 @@ def render(data, templates):
         out += [f'<a id="era-{section["id"]}"></a>', '', f'## {section["title"]}', '',section['note'],'']
         for t in data['templates']:
             if t['section'] != section['id']: continue
-            out += [f'<a id="{t["id"]}"></a>', '', '<details>', f'<summary>{t["id"]} · {t["title"]}</summary>', '',
+            aliases = ['<a id="modern-reserve-bn"></a>'] if t['id'] == 'modern-theater-replacements' else []
+            out += [f'<a id="{t["id"]}"></a>', *aliases, '', '<details>', f'<summary>{t["id"]} · {t["title"]}</summary>', '',
                     f"**适用阶段：** {t['period']}。**记录性质：** {t['basis']}。", '']
             refs = set()
             for view in t['views']:
