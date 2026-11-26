@@ -5371,7 +5371,7 @@
       "notes": [
         "BTG任务身份不以得到加强为必要条件。摩步团本身没有有机坦克营，临时坦克由上级装甲部队提供。",
         "2003年改革后摩步营满额纸面基干61辆，含可缺编的后备排4车；上级配属、FDC用4×4与工兵车辆另外列算。",
-        "单营海外部署的常用模块另见modern-emi-btg；2009年霍姆斯实到及工兵整营加强另按战史。",
+        "单营海外部署的常用模块另见modern-emi-btg；2009年霍姆斯实到及跨团工兵任务配属另按战史。",
         "独立出征EMI-BTG通常无坦克，战区可直接支援FO、JTAC等联络人员，不等于上级火炮、航空兵永久转隶。"
       ],
       "totals": [],
@@ -6530,8 +6530,8 @@
     {
       "id": "mission-homs-2009",
       "section": "missions",
-      "period": "2009年霍姆斯战役：战区三BTG＋国内第6摩步RTG、第36装甲RTG（-）",
-      "title": "霍姆斯纵队的8个主战营基干",
+      "period": "2009年霍姆斯战役：初始出征序列与主战役重组",
+      "title": "霍姆斯纵队的8个主战营基干及任务重组",
       "sources": [
         {
           "label": "40号 · topic-02",
@@ -6540,7 +6540,7 @@
       ],
       "views": [
         {
-          "title": "战区派出的霍姆斯纵队指挥",
+          "title": "初始出征序列（兵力来源）",
           "root": {
             "name": "中东战区司令部",
             "children": [
@@ -6567,7 +6567,7 @@
                   {
                     "name": "6th EMI-RTG",
                     "relation": "task",
-                    "detail": "国内增援"
+                    "detail": "国内增援，含第751 CE营"
                   },
                   {
                     "name": "36th Armored RTG（-）",
@@ -6580,59 +6580,123 @@
           }
         },
         {
-          "title": "第6摩步RTG：团有机751工兵营",
+          "title": "战前重组后的OG主要地面指挥关系",
           "root": {
-            "name": "6th EMI-RTG",
+            "name": "中东战区司令部",
             "children": [
               {
-                "name": "第6团团部"
+                "name": "防空连",
+                "relation": "attached",
+                "detail": "加强战区，非OG直属"
               },
               {
-                "name": "1/6th EMI-BTG",
-                "ref": "modern-motor-bn",
+                "name": "霍姆斯纵队／OG",
                 "relation": "task",
-                "detail": "中央机动／工兵攻坚"
-              },
-              {
-                "name": "2/6th EMI-BTG",
-                "ref": "modern-motor-bn",
-                "relation": "task",
-                "detail": "1/2/6th CTG参与红丘村"
-              },
-              {
-                "name": "3/6th EMI-BTG",
-                "ref": "modern-motor-bn",
-                "relation": "task"
-              },
-              {
-                "name": "第751 CE营",
-                "quantity": 1,
-                "ref": "modern-ce-bn",
-                "detail": "团永久有机，整营任务加强1/6th"
-              },
-              {
-                "name": "团勤务营",
-                "ref": "modern-motor-service-bn"
+                "detail": "韩维钧",
+                "children": [
+                  {
+                    "name": "36th RTG",
+                    "relation": "task",
+                    "detail": "主攻"
+                  },
+                  {
+                    "name": "6th EMI-RTG",
+                    "relation": "task",
+                    "detail": "侧翼屏护及交通线安全"
+                  },
+                  {
+                    "name": "3/20th Infantry BTG",
+                    "relation": "task",
+                    "detail": "关键节点保全兼OG预备"
+                  }
+                ]
               }
             ]
           }
         },
         {
-          "title": "第36装甲RTG（-）：团部与两营",
+          "title": "第36 RTG：三个加强型主攻BTG",
           "root": {
-            "name": "36th Armored RTG（-）",
+            "name": "36th RTG",
             "children": [
               {
-                "name": "第36装甲团团部",
-                "detail": "随队出征"
+                "name": "第36装甲团团部"
               },
               {
-                "name": "2/36th装甲营",
-                "ref": "modern-armored-bn"
+                "name": "2/12th EMI-BTG",
+                "relation": "task",
+                "children": [
+                  {
+                    "name": "坦克连",
+                    "relation": "attached",
+                    "detail": "来自2/36th"
+                  },
+                  {
+                    "name": "常规工兵连",
+                    "relation": "attached",
+                    "detail": "来自751st"
+                  }
+                ],
+                "ref": "modern-motor-bn"
               },
+              {
+                "name": "1/7th EMI-BTG",
+                "relation": "task",
+                "children": [
+                  {
+                    "name": "坦克连",
+                    "relation": "attached",
+                    "detail": "来自2/36th"
+                  },
+                  {
+                    "name": "常规工兵连",
+                    "relation": "attached",
+                    "detail": "来自751st"
+                  }
+                ],
+                "ref": "modern-motor-bn"
+              },
+              {
+                "name": "1/6th EMI-BTG",
+                "relation": "task",
+                "children": [
+                  {
+                    "name": "坦克连",
+                    "relation": "attached",
+                    "detail": "来自2/36th"
+                  },
+                  {
+                    "name": "常规工兵连",
+                    "relation": "attached",
+                    "detail": "来自751st"
+                  }
+                ],
+                "ref": "modern-motor-bn"
+              }
+            ]
+          }
+        },
+        {
+          "title": "第36 RTG：装甲及工兵余部",
+          "root": {
+            "name": "36th RTG",
+            "children": [
               {
                 "name": "3/36th装甲营",
+                "relation": "task",
+                "detail": "完整保留；第二梯队平板运输车机动",
                 "ref": "modern-armored-bn"
+              },
+              {
+                "name": "751st CE Battalion（-）",
+                "relation": "attached",
+                "detail": "营部、重装连及直属保障",
+                "ref": "modern-ce-bn"
+              },
+              {
+                "name": "2/36th装甲营营部",
+                "relation": "unknown",
+                "detail": "三个坦克连已分别加强主攻BTG，营部职责待定"
               },
               {
                 "name": "团属保障",
@@ -6643,45 +6707,53 @@
           }
         },
         {
-          "title": "团属第751 CE营战时任务下放",
+          "title": "第6 RTG：两个侧翼屏护BTG",
           "root": {
-            "name": "第6 EMI-RTG",
+            "name": "6th EMI-RTG",
             "children": [
               {
-                "name": "1/6th EMI-BTG",
-                "relation": "task",
-                "children": [
-                  {
-                    "name": "第751 CE营",
-                    "relation": "attached",
-                    "detail": "团内整营下放；两辆65E2实际参战"
-                  }
-                ]
+                "name": "第6团团部"
               },
               {
                 "name": "2/6th EMI-BTG",
                 "relation": "task",
-                "detail": "1/2/6th CTG红丘村时未获得坦克或工兵排"
+                "detail": "1/2/6th CTG参与红丘村",
+                "ref": "modern-motor-bn"
+              },
+              {
+                "name": "3/6th EMI-BTG",
+                "relation": "task",
+                "ref": "modern-motor-bn"
+              },
+              {
+                "name": "团勤务营",
+                "ref": "modern-motor-service-bn"
               }
             ]
           }
         },
         {
-          "title": "纵队受领专业支援",
+          "title": "OG受领专业支援",
           "root": {
             "name": "霍姆斯纵队／OG",
             "children": [
               {
+                "name": "155毫米牵引式榴弹炮营",
+                "quantity": 2,
+                "relation": "attached",
+                "detail": "每营18门，合计36门纸面定额"
+              },
+              {
                 "name": "双连制通信营",
-                "ref": "mission-signal-homs",
-                "relation": "attached"
+                "relation": "attached",
+                "ref": "mission-signal-homs"
               },
               {
                 "name": "J-90中队",
                 "relation": "attached"
               },
               {
-                "name": "综合保障部队执行战区运输，可申请标准10T运输连",
+                "name": "综合保障部队",
                 "relation": "support",
                 "detail": "具体实到待定"
               }
@@ -6690,21 +6762,50 @@
         }
       ],
       "notes": [
-        "原驻外三个BTG为2/12th、1/7th EMI-BTG和3/20th普通步兵BTG；不推断三个团部均驻中东。",
-        "国内增援第6摩步RTG和团部率第2、第3营出征的第36装甲RTG（-），第36团第1营未参战。",
-        "主要基干合计5摩步BTG、1普通步兵BTG、2装甲营共8个；第751是团属专业工兵营，不另计为主战步兵／装甲营。",
-        "第36团出征两营共72辆排属坦克是标准纸面配置，团营连部和战役实际车辆另计。",
-        "第751 CE营永久隶属第6团，任务上整营加强1/6th；1/2/6th CTG的红丘村既有事件不变。",
-        "2003年后纵队由战区按任务派出，霍姆斯纵队沿用第37纵队编号，不是继续驻外的常设第37纵队司令部。",
-        "约一万人部署估计、实际装甲兵到位、国内战区调入的补充人员数量、其他保障单位与火力支援细节尚待复核。"
+        "初始兵力来源与正式战役任务组织分别记录，不重复计算。原驻外三个BTG及国内两个增援团的出征事实不变，第36团第1营未参战。",
+        "主要基干合计5摩步营、1普通步兵营、2装甲营共8个；正式任务组织为36th五个、6th两个、OG直属一个营级基干。第751是团属专业工兵营，不另计主战营。",
+        "第36团两个装甲营72辆排属坦克；六个坦克连含连部共84辆纸面定额，营团部及实际到位另计。2/36th三个连分属三个主攻BTG，原营部职责及连号对应待定；3/36th保持完整，运输车实到待定。",
+        "第751 CE营永久隶属第6团，战时整体纳入第36 RTG，三个常规连分别加强主攻BTG，营部、重装连及余部由第36团部掌握；两辆65E2参战事实保留，城区具体临时指挥归属待定。",
+        "第6 RTG保留两个摩步营的固定配对保障，无常态坦克加强；其他来源工兵是否到位待定。1/2/6th CTG红丘村事件属年末行动，不自动沿用主战役配属。",
+        "OG受领两个155毫米牵引炮兵营，每营18门为23号现代定额；防空连加强战区而非OG，型号及细编待定。3/20th以节点保全为主要任务，可用预备力量视任务而定。",
+        "第37纵队为战区临时派出机构。跨团任务编组与空气系统的关系见[03号](军制与人员/03-陆军军制.md#topic-08)；实际人员、保障、通信覆盖及战后重组待核。"
       ],
-      "totals": [],
+      "totals": [
+        {
+          "label": "主战营级基干",
+          "terms": [
+            5,
+            2,
+            1
+          ],
+          "value": 8,
+          "unit": "个"
+        },
+        {
+          "label": "坦克连含连部纸面定额",
+          "terms": [
+            42,
+            42
+          ],
+          "value": 84,
+          "unit": "辆"
+        },
+        {
+          "label": "OG牵引155毫米火炮纸面定额",
+          "terms": [
+            18,
+            18
+          ],
+          "value": 36,
+          "unit": "门"
+        }
+      ],
       "related": [
         "modern-force-baseline",
         "modern-armored-rgt",
         "modern-ce-bn"
       ],
-      "basis": "战时兵力与番号已定；员额、后勤和车辆实到待核"
+      "basis": "主要任务编组及炮兵纸面定额已定；员额、实到和细部配属待核"
     },
     {
       "id": "mission-signal-homs",
@@ -8670,7 +8771,7 @@
     },
     {
       "name": "105／155／180毫米专业炮兵营",
-      "note": "任务、配属边界及部分火炮特征已定；完整营连排、每营炮数或发射器数未定。43式250毫米营则已有可画模板。",
+      "note": "历史时期任务、配属边界及部分火炮特征已定，历史各营细编待定；现代155／180毫米营三个六门制火炮连及一个保障连、每营18门（辆）已定，人员与保障细编待定。43式250毫米营已有模板。",
       "label": "10、19号",
       "path": "军制与人员/19-1970年代陆军野战体系与战区火力.md#topic-10"
     },
@@ -8712,7 +8813,7 @@
     },
     {
       "name": "霍姆斯增援与驻外兵力实到",
-      "note": "中东战区原有2/12th、1/7th与3/20th BTG，国内第6 EMI-RTG、第36装甲RTG（-）增援；第751是第6团有机CE营并任务加强1/6th。人数、运输、各BTG位置、国内战区补充兵员实到及坦克实到仍待复核。",
+      "note": "原驻外三个BTG及国内两个RTG为出征来源；正式主战役重组为36th主攻、6th侧翼及OG直属普步BTG，751任务转入36th。实际人员、车辆、坦克运输车、2/36th营部、6th额外工兵、炮兵实到、防空连具体编成及战后指挥变化待核。",
       "label": "40号",
       "path": "历史与战史/40-2009年叙利亚反恐战争与多国军事干预.md#topic-02"
     }
